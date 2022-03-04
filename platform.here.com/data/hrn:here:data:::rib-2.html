@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-US">
+ <head>
+  <style>
+   @charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}
+  </style>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta charset="utf-8"/>
+  <base href="/"/>
+  <title id="title">
+   Welcome to HERE
+  </title>
+  <meta content="" name="keywords"/>
+  <meta content="" name="description"/>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+  <!-- BEGIN including meta -->
+  <!-- END including meta -->
+  <link href="/img/icons/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="/img/icons/apple-touch-icon.png" rel="apple-touch-icon"/>
+  <link href="/img/icons/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76"/>
+  <link href="/img/icons/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120"/>
+  <link href="/img/icons/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152"/>
+  <!-- BEGIN including stylesheets -->
+  <!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,500,700" /> -->
+  <link href="vendor/normalize.css" rel="stylesheet"/>
+  <link href="applicationCommon.f1ccaf5d.css" rel="stylesheet"/>
+  <link href="applicationShared.d41d8cd9.css" rel="stylesheet"/>
+  <!-- END including stylesheets -->
+ </head>
+ <body class="sign-in sdk sdk-window realm-here membrane membrane--harmony olp ng-scope chrome" data-ng-app="hereApp" data-ng-class="whichBrowser()" data-ng-controller="RootCtrl">
+  <script>
+   var getRegExp = function (r) {
+            return r ? r : RegExp();
+        };
+
+        window.here = {
+            page: "sign-in",
+            config: {"accessCookies":{"accessCookieName":"here_ca_access","mfaClaimCookieName":"here_ca_mfa_verified","mfaRqdCookieName":"here_ca_mfa_required"},"avatarUploadMaxSize":500000,"cookieNotice":{"cookieDomain":"here.com","cookieExpiryInDays":365,"cookieName":"HERE_COOKIE_NOTICE","cookiePath":"/","version":1},"countries":{"path":"/api/countries"},"defaultLanguage":"en-GB","dynamicProperties":{"enabled":false},"esri":{"appId":"dp9hRj3toikSwHDN","host":"https://js.arcgis.com"},"explicitTermsCountries":["AUT","BEL","BGR","HRV","CYP","CZE","DNK","EST","FIN","FRA","DEU","GRC","HUN","IRL","ITA","LVA","LTU","LUX","MLT","NLD","POL","PRT","ROU","SVK","SVN","ESP","SWE","GBR","GUF","GLP","MTQ","MNE","MYT","REU","MAF","GIB","ALA","SPM","GRL","RWA","SGP","VIR","PYF","NCL","ATF","AIA","BMU","IOT","CYM","FLK","MSR","PCN","SHN","SGS","TCA","AND","LIE","MCO","SMR","VAT","QAT","JEY","GGY","ISL","NOR","CHE"],"facebook":{"appId":"317965898359237","host":"//connect.facebook.net/","status":"true","xfbml":"true"},"faqLink":"https://help.here.com/account","heread":{"loginPage":"https://sso.it.here.com/adfs/ls/IdpInitiatedSignon.aspx"},"omniture":{"sCodeAccountId":"nokiahereaccountfwg0prod"},"scbe":{"host":"production"},"supportedLanguages":"en-GB, af-ZA, ar-SA, az-Latn-AZ, be-BY, bg-BG, ca-ES, cs-CZ, da-DK, de-DE, el-GR, en-US, es-ES, es-MX, et-EE, eu-ES, fa-IR, fi-FI, fil-PH, fr-CA, fr-FR, gl-ES, ha-Latn-NG, he-IL, hi-IN, hr-HR, hu-HU, id-ID, it-IT, ja-JP, kk-KZ, ko-KR, lt-LT, lv-LV, mk-MK, ms-MY, nb-NO, nl-NL, pl-PL, pt-BR, pt-PT, ro-RO, ru-RU, sk-SK, sl-SI, sq-AL, sr-Latn-CS, sv-SE, th-TH, tr-TR, uk-UA, uz-Latn-UZ, vi-VN, zh-CN, zh-TW","termsChangedNotice":{"cookieDomain":"here.com","cookieExpiryInDays":365,"cookieName":"HERE_TERMS_CHANGED_NOTICE_VERSION","cookiePath":"/","version":1},"verimi":{"apiHost":"https://account.api.here.com","loginPage":"https://web.verimi.de/","clientId":"5b2dc235-6c44-44ea-9cf0-8d01ac63bf8e","redirectUri":"https://account.here.com/verimi/oauth-callback"},"platformClm":{"signUp":"https://platform.here.com/sign-up"},"sdk":{"active":true,"oidc":true,"version":"4","type":"window","uri":"","clientId":"YQijV3hAPdxySAVtE6ZT","isOlpClient":true,"noFB":false,"onlySignUp":false,"noSignUp":true,"realm":"","realmAny":false,"realmInput":true,"noCloseFrameButton":false,"inviteToken":"","decodedInviteToken":{},"selfCertifyAge":false,"uatDuration":"","phoneNumberField":false,"companyEmailInSignUp":false,"require2fa":false,"correlationId":"HAWeb-dc57d556-21c4-4d0b-b376-fc66e7bcadd1","theme":"harmony","signInTemplate":"olp"},"mfaEmailAddr":"","prefillEmailAddr":"","signInScreenConfig":["password"]},
+            features: {"enableAvatarMgmt":true,"enableFaqLinks":true,"enableTracking":false,"mockedMemcached":false,"mocks":false,"rememberMeByDefault":true,"resetPasswordValidateCaptcha":true,"sdkUpdateClientIdOnRefresh":true,"signUpValidateCaptcha":true,"ssoRefactor":false,"styleGuide":false,"resendPendingInviteAtFailedLogin":false,"enableNoPlatformAccountMsg":true,"enableMarketingEmail":false,"enablePlatformTermsReAcceptance":false,"enableConversionSignIn":false},
+            user: {
+                locale: {"language":"en","country":"US","tag":"en-US","tagUnderscore":"en_US"},
+                location: "",
+                data: {"loggedIn":false}
+            },
+            date: {"months":[{"value":4,"long":"April","med":"Apr","short":"A"},{"value":8,"long":"August","med":"Aug","short":"A"},{"value":12,"long":"December","med":"Dec","short":"D"},{"value":2,"long":"February","med":"Feb","short":"F"},{"value":1,"long":"January","med":"Jan","short":"J"},{"value":7,"long":"July","med":"Jul","short":"J"},{"value":6,"long":"June","med":"Jun","short":"J"},{"value":3,"long":"March","med":"Mar","short":"M"},{"value":5,"long":"May","med":"May","short":"M"},{"value":11,"long":"November","med":"Nov","short":"N"},{"value":10,"long":"October","med":"Oct","short":"O"},{"value":9,"long":"September","med":"Sep","short":"S"}],"days":[{"value":5,"long":"Friday","med":"Fri","short":"F"},{"value":1,"long":"Monday","med":"Mon","short":"M"},{"value":6,"long":"Saturday","med":"Sat","short":"S"},{"value":7,"long":"Sunday","med":"Sun","short":"S"},{"value":4,"long":"Thursday","med":"Thu","short":"T"},{"value":2,"long":"Tuesday","med":"Tue","short":"T"},{"value":3,"long":"Wednesday","med":"Wed","short":"W"}]},
+            copyright: {
+                yearStart: 1987,
+                yearCurrent: 2022
+            },
+            emailExpression: getRegExp(/^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+$/),
+            phoneNumberExpression: getRegExp(/^[+() \-.x\d]{7,}$/),
+            mfaSmsChannelValueExpression: getRegExp(/^\+[1-9]\d{6,15}$/),
+            theme: "harmony",
+            require2fa: false,
+            realm: "here",
+            olpRealm: "",
+            countries: [{"code":"ABW","name":"Aruba"},{"code":"AFG","name":"Afghanistan"},{"code":"AGO","name":"Angola"},{"code":"AIA","name":"Anguilla"},{"code":"ALA","name":"Åland Islands"},{"code":"ALB","name":"Albania"},{"code":"AND","name":"Andorra"},{"code":"ANT","name":"Netherlands Antilles"},{"code":"ARE","name":"United Arab Emirates"},{"code":"ARG","name":"Argentina"},{"code":"ARM","name":"Armenia"},{"code":"ASM","name":"American Samoa"},{"code":"ATA","name":"Antarctica"},{"code":"ATF","name":"French Southern and Antarctic Territories"},{"code":"ATG","name":"Antigua and Barbuda"},{"code":"AUS","name":"Australia"},{"code":"AUT","name":"Austria"},{"code":"AZE","name":"Azerbaijan"},{"code":"BDI","name":"Burundi"},{"code":"BEL","name":"Belgium"},{"code":"BEN","name":"Benin"},{"code":"BES","name":"Caribbean Netherlands"},{"code":"BFA","name":"Burkina Faso"},{"code":"BGD","name":"Bangladesh"},{"code":"BGR","name":"Bulgaria"},{"code":"BHR","name":"Bahrain"},{"code":"BHS","name":"Bahamas"},{"code":"BIH","name":"Bosnia and Herzegovina"},{"code":"BLM","name":"Saint Barthélemy"},{"code":"BLR","name":"Belarus"},{"code":"BLZ","name":"Belize"},{"code":"BMU","name":"Bermuda"},{"code":"BOL","name":"Bolivia"},{"code":"BRA","name":"Brazil"},{"code":"BRB","name":"Barbados"},{"code":"BRN","name":"Brunei"},{"code":"BTN","name":"Bhutan"},{"code":"BVT","name":"Bouvet Island"},{"code":"BWA","name":"Botswana"},{"code":"CAF","name":"Central African Republic"},{"code":"CAN","name":"Canada"},{"code":"CCK","name":"Cocos (Keeling) Islands"},{"code":"CHE","name":"Switzerland"},{"code":"CHL","name":"Chile"},{"code":"CHN","name":"China"},{"code":"CIV","name":"Cote d’Ivoire"},{"code":"CMR","name":"Cameroon"},{"code":"COD","name":"Democratic Republic of the Congo"},{"code":"COG","name":"Congo"},{"code":"COK","name":"Cook Islands"},{"code":"COL","name":"Colombia"},{"code":"COM","name":"Comoros"},{"code":"CPV","name":"Cape Verde"},{"code":"CRI","name":"Costa Rica"},{"code":"CUW","name":"Curaçao"},{"code":"CXR","name":"Christmas Island"},{"code":"CYM","name":"Cayman Islands"},{"code":"CYP","name":"Cyprus"},{"code":"CZE","name":"Czech Republic"},{"code":"DEU","name":"Germany"},{"code":"GAS","name":"Gaza Strip"},{"code":"XKX","name":"Kosovo"},{"code":"WEB","name":"The West Bank"},{"code":"XCI","name":"Channel Islands"},{"code":"DJI","name":"Djibouti"},{"code":"DMA","name":"Dominica"},{"code":"DNK","name":"Denmark"},{"code":"DOM","name":"Dominican Republic"},{"code":"DZA","name":"Algeria"},{"code":"ECU","name":"Ecuador"},{"code":"EGY","name":"Egypt"},{"code":"ERI","name":"Eritrea"},{"code":"ESH","name":"Western Sahara"},{"code":"ESP","name":"Spain"},{"code":"EST","name":"Estonia"},{"code":"ETH","name":"Ethiopia"},{"code":"FIN","name":"Finland"},{"code":"FJI","name":"Fiji"},{"code":"FLK","name":"Falkland Islands"},{"code":"FRA","name":"France"},{"code":"FRO","name":"Faroe Islands"},{"code":"FSM","name":"Micronesia"},{"code":"GAB","name":"Gabon"},{"code":"GBR","name":"United Kingdom"},{"code":"GEO","name":"Georgia"},{"code":"GGY","name":"Guernsey"},{"code":"GHA","name":"Ghana"},{"code":"GIB","name":"Gibraltar"},{"code":"GIN","name":"Guinea"},{"code":"GLP","name":"Guadeloupe"},{"code":"GMB","name":"Gambia"},{"code":"GNB","name":"Guinea-Bissau"},{"code":"GNQ","name":"Equatorial Guinea"},{"code":"GRC","name":"Greece"},{"code":"GRD","name":"Grenada"},{"code":"GRL","name":"Greenland"},{"code":"GTM","name":"Guatemala"},{"code":"GUF","name":"French Guiana"},{"code":"GUM","name":"Guam"},{"code":"GUY","name":"Guyana"},{"code":"HKG","name":"Hong Kong"},{"code":"HMD","name":"Heard Island and McDonald Islands"},{"code":"HND","name":"Honduras"},{"code":"HRV","name":"Croatia"},{"code":"HTI","name":"Haiti"},{"code":"HUN","name":"Hungary"},{"code":"IDN","name":"Indonesia"},{"code":"IMN","name":"Isle of Man"},{"code":"IND","name":"India"},{"code":"IOT","name":"British Indian Ocean Territory"},{"code":"IRL","name":"Ireland"},{"code":"IRQ","name":"Iraq"},{"code":"ISL","name":"Iceland"},{"code":"ISR","name":"Israel"},{"code":"ITA","name":"Italy"},{"code":"JAM","name":"Jamaica"},{"code":"JEY","name":"Jersey"},{"code":"JOR","name":"Jordan"},{"code":"JPN","name":"Japan"},{"code":"KAZ","name":"Kazakhstan"},{"code":"KEN","name":"Kenya"},{"code":"KGZ","name":"Kyrgyzstan"},{"code":"KHM","name":"Cambodia"},{"code":"KIR","name":"Kiribati"},{"code":"KNA","name":"Saint Kitts and Nevis"},{"code":"KOR","name":"Republic of Korea"},{"code":"KWT","name":"Kuwait"},{"code":"LAO","name":"Laos"},{"code":"LBN","name":"Lebanon"},{"code":"LBR","name":"Liberia"},{"code":"LBY","name":"Libya"},{"code":"LCA","name":"Saint Lucia"},{"code":"LIE","name":"Liechtenstein"},{"code":"LKA","name":"Sri Lanka"},{"code":"LSO","name":"Lesotho"},{"code":"LTU","name":"Lithuania"},{"code":"LUX","name":"Luxembourg"},{"code":"LVA","name":"Latvia"},{"code":"MAC","name":"Macao"},{"code":"MAF","name":"Saint Martin"},{"code":"MAR","name":"Morocco"},{"code":"MCO","name":"Monaco"},{"code":"MDA","name":"Moldova"},{"code":"MDG","name":"Madagascar"},{"code":"MDV","name":"Maldives"},{"code":"MEX","name":"Mexico"},{"code":"MHL","name":"Marshall Islands"},{"code":"MKD","name":"Macedonia"},{"code":"MLI","name":"Mali"},{"code":"MLT","name":"Malta"},{"code":"MMR","name":"Myanmar"},{"code":"MNE","name":"Montenegro"},{"code":"MNG","name":"Mongolia"},{"code":"MNP","name":"Northern Mariana Islands"},{"code":"MOZ","name":"Mozambique"},{"code":"MRT","name":"Mauritania"},{"code":"MSR","name":"Montserrat"},{"code":"MTQ","name":"Martinique"},{"code":"MUS","name":"Mauritius"},{"code":"MWI","name":"Malawi"},{"code":"MYS","name":"Malaysia"},{"code":"MYT","name":"Mayotte"},{"code":"NAM","name":"Namibia"},{"code":"NCL","name":"New Caledonia"},{"code":"NER","name":"Niger"},{"code":"NFK","name":"Norfolk Island"},{"code":"NGA","name":"Nigeria"},{"code":"NIC","name":"Nicaragua"},{"code":"NIU","name":"Niue"},{"code":"NLD","name":"Netherlands"},{"code":"NOR","name":"Norway"},{"code":"NPL","name":"Nepal"},{"code":"NRU","name":"Nauru"},{"code":"NZL","name":"New Zealand"},{"code":"OMN","name":"Oman"},{"code":"PAK","name":"Pakistan"},{"code":"PAN","name":"Panama"},{"code":"PCN","name":"Pitcairn"},{"code":"PER","name":"Peru"},{"code":"PHL","name":"Philippines"},{"code":"PLW","name":"Palau"},{"code":"PNG","name":"Papua New Guinea"},{"code":"POL","name":"Poland"},{"code":"PRI","name":"Puerto Rico"},{"code":"PRT","name":"Portugal"},{"code":"PRY","name":"Paraguay"},{"code":"PSE","name":"Palestinian Territory"},{"code":"PYF","name":"French Polynesia"},{"code":"QAT","name":"Qatar"},{"code":"REU","name":"Réunion"},{"code":"ROU","name":"Romania"},{"code":"RUS","name":"Russia"},{"code":"RWA","name":"Rwanda"},{"code":"SAU","name":"Saudi Arabia"},{"code":"SEN","name":"Senegal"},{"code":"SGP","name":"Singapore"},{"code":"SGS","name":"South Georgia and the South Sandwich Islands"},{"code":"SHN","name":"Saint Helena"},{"code":"SJM","name":"Svalbard and Jan Mayen"},{"code":"SLB","name":"Solomon Islands"},{"code":"SLE","name":"Sierra Leone"},{"code":"SLV","name":"El Salvador"},{"code":"SMR","name":"San Marino"},{"code":"SOM","name":"Somalia"},{"code":"SPM","name":"Saint Pierre and Miquelon"},{"code":"SRB","name":"Serbia"},{"code":"STP","name":"Sao Tome and Principe"},{"code":"SUR","name":"Suriname"},{"code":"SVK","name":"Slovakia"},{"code":"SVN","name":"Slovenia"},{"code":"SWE","name":"Sweden"},{"code":"SWZ","name":"Swaziland"},{"code":"SXM","name":"Saint Martin; Sint Maarten"},{"code":"SYC","name":"Seychelles"},{"code":"TCA","name":"Turks and Caicos Islands"},{"code":"TCD","name":"Chad"},{"code":"TGO","name":"Togo"},{"code":"THA","name":"Thailand"},{"code":"TJK","name":"Tajikistan"},{"code":"TKL","name":"Tokelau"},{"code":"TKM","name":"Turkmenistan"},{"code":"TLS","name":"Timor-Leste"},{"code":"TON","name":"Tonga"},{"code":"TTO","name":"Trinidad and Tobago"},{"code":"TUN","name":"Tunisia"},{"code":"TUR","name":"Turkey"},{"code":"TUV","name":"Tuvalu"},{"code":"TWN","name":"Taiwan"},{"code":"TZA","name":"Tanzania"},{"code":"UGA","name":"Uganda"},{"code":"UKR","name":"Ukraine"},{"code":"UMI","name":"United States Minor Outlying Islands"},{"code":"URY","name":"Uruguay"},{"code":"USA","name":"United States of America"},{"code":"UZB","name":"Uzbekistan"},{"code":"VAT","name":"Vatican City"},{"code":"VCT","name":"Saint Vincent and the Grenadines"},{"code":"VEN","name":"Venezuela"},{"code":"VGB","name":"British Virgin Islands"},{"code":"VIR","name":"Virgin Islands"},{"code":"VNM","name":"Vietnam"},{"code":"VUT","name":"Vanuatu"},{"code":"WLF","name":"Wallis and Futuna Islands"},{"code":"WSM","name":"Samoa"},{"code":"YEM","name":"Yemen"},{"code":"ZAF","name":"South Africa"},{"code":"ZMB","name":"Zambia"},{"code":"ZWE","name":"Zimbabwe"}],
+            csrf: "b6nnADHH-vcknoEZNiLW8Q0N-TWbCABVBUvU",
+            terms: {
+                explicit: "You agree to the <a href=\"{{termsURL}}\" title=\"Account Terms\">Account Terms</a> and <a href=\"{{privacyURL}}\" title=\"Privacy Policy\">Privacy Policy</a>.",
+                implicit: "By continuing, you agree to the <a href=\"{{termsURL}}\" title=\"Account Terms\">Account Terms</a> and <a href=\"{{privacyURL}}\" title=\"Privacy Policy\">Privacy Policy</a>.",
+                userzero: "I agree to the <a href=\"{{privacyURL}}\" title=\"HERE Privacy Policy\">HERE Privacy Policy</a>, <a href=\"{{termsURL}}\" title=\"HERE Account Terms\">Account Terms</a>, and <a href=\"{{prodTermsURL}}\" title=\"HERE Platform Terms\">Platform Terms</a>."
+            },
+            cookieNotice: {
+                weUseCookies:       "WE USE COOKIES",
+                description:        "HERE uses cookies from our websites to bring you services and info that matter more to you, including advertising from our partners.",
+                descriptionShort:   "HERE websites use cookies.",
+                consent:            "By using this website, you consent to the use of cookies.",
+                consentShort:       "By using this website, you consent to the use of cookies.",
+                linkCopy:           "Find out more"
+            },
+            termsChangedNotice: {
+                termsChanged:       "We have recently updated our Account Terms and Privacy Policy.",
+                linkCopy:           "Find out more"
+            },
+            notifications: {
+                unhandledError:     "Sorry. Something went wrong. Please refresh the page or try again.",
+                mfaPasscode:  {
+                    retryMFACodeSentSuccess:    "An authentication code was sent.",
+                    retryMFACodeSentError:      "Couldn't send the authentication code.  Try again.",
+                    retryMFACodeTooManyRequests: "Too many requests. Wait 10 seconds before trying again."
+                }
+            }
+        };
+        // AAA-6464
+        if (window.here.config.sdk && (window.here.config.sdk.signInTemplate === "olp")) {
+            document.getElementById("title").innerHTML = "Welcome to HERE"
+        }
+  </script>
+  <!-- including body and footer -->
+  <div class="ng-pristine ng-valid ng-valid-email" data-ng-form="true" id="app" name="accountForm">
+   <div data-size-listener="true" id="container-body">
+    <!-- Include sdk-close button only if page is displayed using sdk and not disabled and template not single-column -->
+    <!-- ngView: -->
+    <div class="middle ng-scope" data-ng-view="">
+     <form class="centered-middle ng-pristine ng-valid ng-scope ng-valid-email" data-ng-controller="AccountSignInPageOlpCtrl" data-ng-init="sdkOpened('sign-in')" id="sign-in-form" novalidate="novalidate">
+      <div class="logo">
+      </div>
+      <h2 class="heading font-bold font-size-32">
+       Welcome to HERE
+      </h2>
+      <p class="font-regular font-size-16">
+       Sign in with your HERE platform account
+      </p>
+      <!-- <h2 class="heading font-bold font-size-32">Sign in with your HERE platform account</h2> -->
+      <div class="error-text" id="error-box">
+      </div>
+      <!-- ngIf: !user.dataTmp.missingSteps.terms -->
+      <div class="ng-scope" data-ng-if="!user.dataTmp.missingSteps.terms">
+       <!-- ngIf: isSignUpAvailable() -->
+       <div class="position-relative">
+        <div class="form-field" data-qe-id="email">
+         <label for="sign-in-email">
+          Email
+         </label>
+         <input autocomplete="off" autofocus="autofocus" class="input--email is-required ng-pristine ng-untouched ng-valid ng-empty ng-valid-email" data-error-empty="Please enter your email." data-error-invalid="Check that email address again." data-ng-class="{ prefilled: user.dataTmp.email.length &gt; 0 }" data-ng-disabled="isMfaEmailAddrPreset()" data-ng-model="user.dataTmp.email" data-reqs='{"min-length" : 1, "valid-email" : true }' id="sign-in-email" name="sign-in-email" tabindex="20" type="email"/>
+         <!-- ngIf: isSelfServeSignUpEnabled -->
+         <div class="ng-scope" ng-if="isSelfServeSignUpEnabled">
+          <!-- ngIf: olpSignInForm.showNoPlatformAccountMsg -->
+         </div>
+         <!-- end ngIf: isSelfServeSignUpEnabled -->
+        </div>
+        <!-- ngIf: !isSelfServeSignUpEnabled -->
+        <!-- ngIf: olpSignInForm.showRealmInput -->
+        <!-- ngIf: olpSignInForm.showEmailNextBtn -->
+        <div class="form-field ng-scope" data-ng-if="olpSignInForm.showEmailNextBtn">
+         <button class="primary" data-ng-click="validateEmailInput()" data-qe-id="nextEmailBtn" id="nextEmailBtn" tabindex="23">
+          <span>
+           Next
+          </span>
+         </button>
+         <!-- ngIf: isSelfServeSignUpEnabled -->
+         <div class="margin-top ng-scope" ng-if="isSelfServeSignUpEnabled">
+          <div class="form-divider" data-qe-id="new-to-here-platform-separator" id="new-to-here-platform-separator">
+           <p class="no-margin">
+            New to HERE platform?
+           </p>
+          </div>
+          <div class="form-field margin-top">
+           <button class="secondary__2" data-ng-click="redirectToPlatformSignUp()" data-qe-id="btnCreateFreeAccount" id="btnCreateFreeAccount">
+            <span>
+             Create a free account
+            </span>
+           </button>
+          </div>
+         </div>
+         <!-- end ngIf: isSelfServeSignUpEnabled -->
+        </div>
+        <!-- end ngIf: olpSignInForm.showEmailNextBtn -->
+        <div class="spinner-overlay spinner-20 ng-hide" data-ng-show="changings.loadingEmailNextBtn">
+        </div>
+        <!-- ngIf: olpSignInForm.showRealmNextbtn -->
+       </div>
+       <!-- ngIf: isAllowedLoginForRealm.password -->
+       <!-- ngIf: dividerRequiredWithRealm() -->
+       <!-- ngIf: isAllowedLoginForRealm.facebook -->
+       <!--verimi-->
+       <!-- ngIf: isAllowedLoginForRealm.verimi -->
+       <!--
+        <div class="form-field" data-ng-if="isAllowedLoginForRealm.google">
+            <button id="sign-in-google" style="display: none"
+                    data-ng-click="registerViaGoogle()"
+                    data-ng-disabled="!googleApi"
+                    class="primary google font-size-14" tabindex="55">
+                <img src='/img/icons/logo_google_signin_dark_normal_web@2x.png'/>
+                <span>Sign in with Google</span>
+            </button>
+        </div>
+        -->
+       <!-- ngIf: isAllowedLoginForRealm.arcgis -->
+       <!-- ngIf: isAllowedLoginForRealm.heread -->
+       <!-- ngIf: olpSignInForm.showRequestInviteLink -->
+      </div>
+      <!-- end ngIf: !user.dataTmp.missingSteps.terms -->
+      <div id="fb-root">
+      </div>
+     </form>
+    </div>
+   </div>
+   <div data-footer="true" id="container-footer">
+   </div>
+  </div>
+  <div class="spinner-overlay spinner-40 ng-hide" data-ng-show="changings.loading">
+  </div>
+  <div id="cookie-notice">
+   <div class="notice">
+    <span class="weusecookies">
+    </span>
+    WE USE COOKIES —
+    <span class="desktop">
+     HERE uses cookies from our websites to bring you services and info that matter more to you, including advertising from our partners.
+                By using this website, you consent to the use of cookies.
+    </span>
+    <span class="mobile">
+     HERE websites use cookies. |
+                By using this website, you consent to the use of cookies.
+    </span>
+    <a href="https://legal.here.com/privacy/cookies/" target="_blank">
+     Find out more
+    </a>
+   </div>
+   <div class="close-notification" data-ng-click="closeCookieNotice()">
+    ×
+   </div>
+  </div>
+  <!-- BEGIN including libs and scripts -->
+  <script src="applicationVendor.min.2fe67be6.js">
+  </script>
+  <script src="applicationShared.min.5212a71e.js">
+  </script>
+  <!-- END including libs and scripts -->
+ </body>
+</html>

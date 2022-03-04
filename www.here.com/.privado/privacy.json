@@ -1,0 +1,567 @@
+{
+  "repoId": "repoId",
+  "repoName": "",
+  "repoURL": "",
+  "branchName": "master",
+  "commitId": "",
+  "customerId": "cliCustomer",
+  "scanId": null,
+  "permissionList": [],
+  "piiList": [
+    {
+      "category": "Contact Data",
+      "element": "Email Address",
+      "dataSafetyElement": "Email address",
+      "dataSafetyCategory": "Personal info",
+      "sensitive": false,
+      "sensitivity": "medium",
+      "score": 1.3,
+      "confidence": "high",
+      "scoringPoints": [
+        "high confidence",
+        "Positive Word Matched",
+        "CaseDependant Matched"
+      ],
+      "occurrences": [
+        {
+          "score": 1.3,
+          "confidence": "high",
+          "scoringPoints": [
+            "high confidence",
+            "Positive Word Matched",
+            "CaseDependant Matched"
+          ],
+          "sample": "Email",
+          "fileName": "platform.html",
+          "language": "html",
+          "excerpt": "                                      <div class=\"mktoAsterix\">\n                                       *\n                                      </div>\n                                      Email Address:\n                                     </label>\n                                     <div class=\"mktoGutter mktoHasWidth\">\n                                     </div>\n",
+          "isCorrect": null,
+          "occurrenceIndexes": [
+            {
+              "lineNumber": 3,
+              "startIndex": 38,
+              "endIndex": 43
+            }
+          ],
+          "startLocationLine": 6649,
+          "authorEmail": null
+        },
+        {
+          "score": 1.3,
+          "confidence": "high",
+          "scoringPoints": [
+            "high confidence",
+            "Positive Word Matched",
+            "CaseDependant Matched"
+          ],
+          "sample": "Email",
+          "fileName": "drives.html",
+          "language": "html",
+          "excerpt": "                     <br/>\n                     Netherlands\n                     <br/>\n                     Email:\n                     <a href=\"mailto:privacy@here.com\" onclick='utag.link({\"link_id\": this,\"link_text\": \"herecomcorporate:hyperlink:privacy@here.com:drives---body-content---faq:mailto:privacy@here.com\",\"linkEvent\": \"herecomcorporate:hyperlink:privacy@here.com:drives---body-content---faq:mailto:privacy@here.com\",\"actionTrack\": \"herecomcorporate:hyperlink:privacy@here.com:drives---body-content---faq:mailto:privacy@here.com\"});'>\n                      privacy@here.com\n                     </a>\n                     <br/>\n                     Webform:\n                     <a href=\"https://privacy.here.com/dsr\" onclick='utag.link({\"link_id\": this,\"link_text\": \"herecomcorporate:hyperlink:https://privacy.here.com/dsr:drives---body-content---faq:https://privacy.here.com/dsr\",\"linkEvent\": \"herec",
+          "isCorrect": null,
+          "occurrenceIndexes": [
+            {
+              "lineNumber": 3,
+              "startIndex": 21,
+              "endIndex": 26
+            }
+          ],
+          "startLocationLine": 6160,
+          "authorEmail": null
+        },
+        {
+          "score": 0.8,
+          "confidence": "high",
+          "scoringPoints": [
+            "high confidence",
+            "CaseDependant Matched"
+          ],
+          "sample": "Email",
+          "fileName": "jp/contact.html",
+          "language": "html",
+          "excerpt": "                                </label>\n                                <div class=\"mktoGutter mktoHasWidth\">\n                                </div>\n                                <input aria-labelledby=\"LblEmail InstructEmail\" aria-required=\"true\" class=\"mktoField mktoEmailField mktoHasWidth mktoRequired\" id=\"Email_5_13\" maxlength=\"255\" name=\"Email\" type=\"email\"/>\n                                <span class=\"mktoInstruction\" id=\"InstructEmail\" tabindex=\"-1\">\n                                </span>\n                                <div class=\"mktoClear\">\n",
+          "isCorrect": null,
+          "occurrenceIndexes": [
+            {
+              "lineNumber": 3,
+              "startIndex": 59,
+              "endIndex": 64
+            },
+            {
+              "lineNumber": 3,
+              "startIndex": 73,
+              "endIndex": 78
+            },
+            {
+              "lineNumber": 3,
+              "startIndex": 122,
+              "endIndex": 127
+            },
+            {
+              "lineNumber": 3,
+              "startIndex": 164,
+              "endIndex": 169
+            },
+            {
+              "lineNumber": 3,
+              "startIndex": 198,
+              "endIndex": 203
+            },
+            {
+              "lineNumber": 4,
+              "startIndex": 74,
+              "endIndex": 79
+            }
+          ],
+          "startLocationLine": 4353,
+          "authorEmail": null
+        },
+        {
+          "score": 0.8,
+          "confidence": "high",
+          "scoringPoints": [
+            "high confidence",
+            "CaseDependant Matched"
+          ],
+          "sample": "Email",
+          "fileName": "jp/platform/marketplace.html",
+          "language": "html",
+          "excerpt": "                               </label>\n                               <div class=\"mktoGutter mktoHasWidth\">\n                               </div>\n                               <input aria-labelledby=\"LblEmail InstructEmail\" aria-required=\"true\" class=\"mktoField mktoEmailField mktoHasWidth mktoRequired\" id=\"Email_5_13\" maxlength=\"255\" name=\"Email\" type=\"email\"/>\n                               <span class=\"mktoInstruction\" id=\"InstructEmail\" tabindex=\"-1\">\n                               </span>\n                               <div class=\"mktoClear\">\n",
+          "isCorrect": null,
+          "occurrenceIndexes": [
+            {
+              "lineNumber": 3,
+              "startIndex": 58,
+              "endIndex": 63
+            },
+            {
+              "lineNumber": 3,
+              "startIndex": 72,
+              "endIndex": 77
+            },
+            {
+              "lineNumber": 3,
+              "startIndex": 121,
+              "endIndex": 126
+            },
+            {
+              "lineNumber": 3,
+              "startIndex": 163,
+              "endIndex": 168
+            },
+            {
+              "lineNumber": 3,
+              "startIndex": 197,
+              "endIndex": 202
+            },
+            {
+              "lineNumber": 4,
+              "startIndex": 73,
+              "endIndex": 78
+            }
+          ],
+          "startLocationLine": 5896,
+          "authorEmail": null
+        }
+      ]
+    },
+    {
+      "category": "Personal Identification",
+      "element": "First Name",
+      "dataSafetyElement": "Name",
+      "dataSafetyCategory": "Personal info",
+      "sensitive": false,
+      "sensitivity": "low",
+      "score": 0.8,
+      "confidence": "high",
+      "scoringPoints": [
+        "high confidence",
+        "CaseDependant Matched"
+      ],
+      "occurrences": [
+        {
+          "score": 0.8,
+          "confidence": "high",
+          "scoringPoints": [
+            "high confidence",
+            "CaseDependant Matched"
+          ],
+          "sample": "FirstName",
+          "fileName": "jp/platform/marketplace.html",
+          "language": "html",
+          "excerpt": "                               </label>\n                               <div class=\"mktoGutter mktoHasWidth\">\n                               </div>\n                               <input aria-labelledby=\"LblFirstName InstructFirstName\" aria-required=\"true\" class=\"mktoField mktoTextField mktoHasWidth mktoRequired\" id=\"FirstName_2_10\" maxlength=\"255\" name=\"FirstName\" type=\"text\"/>\n                               <span class=\"mktoInstruction\" id=\"InstructFirstName\" tabindex=\"-1\">\n                               </span>\n                               <div class=\"mktoClear\">\n",
+          "isCorrect": null,
+          "occurrenceIndexes": [
+            {
+              "lineNumber": 3,
+              "startIndex": 58,
+              "endIndex": 67
+            },
+            {
+              "lineNumber": 3,
+              "startIndex": 76,
+              "endIndex": 85
+            },
+            {
+              "lineNumber": 3,
+              "startIndex": 170,
+              "endIndex": 179
+            },
+            {
+              "lineNumber": 3,
+              "startIndex": 208,
+              "endIndex": 217
+            },
+            {
+              "lineNumber": 4,
+              "startIndex": 73,
+              "endIndex": 82
+            }
+          ],
+          "startLocationLine": 5825,
+          "authorEmail": null
+        },
+        {
+          "score": 0.8,
+          "confidence": "high",
+          "scoringPoints": [
+            "high confidence",
+            "CaseDependant Matched"
+          ],
+          "sample": "FirstName",
+          "fileName": "jp/contact.html",
+          "language": "html",
+          "excerpt": "                                </label>\n                                <div class=\"mktoGutter mktoHasWidth\">\n                                </div>\n                                <input aria-labelledby=\"LblFirstName InstructFirstName\" aria-required=\"true\" class=\"mktoField mktoTextField mktoHasWidth mktoRequired\" id=\"FirstName_2_10\" maxlength=\"255\" name=\"FirstName\" type=\"text\"/>\n                                <span class=\"mktoInstruction\" id=\"InstructFirstName\" tabindex=\"-1\">\n                                </span>\n                                <div class=\"mktoClear\">\n",
+          "isCorrect": null,
+          "occurrenceIndexes": [
+            {
+              "lineNumber": 3,
+              "startIndex": 59,
+              "endIndex": 68
+            },
+            {
+              "lineNumber": 3,
+              "startIndex": 77,
+              "endIndex": 86
+            },
+            {
+              "lineNumber": 3,
+              "startIndex": 171,
+              "endIndex": 180
+            },
+            {
+              "lineNumber": 3,
+              "startIndex": 209,
+              "endIndex": 218
+            },
+            {
+              "lineNumber": 4,
+              "startIndex": 74,
+              "endIndex": 83
+            }
+          ],
+          "startLocationLine": 4282,
+          "authorEmail": null
+        },
+        {
+          "score": 0.8,
+          "confidence": "high",
+          "scoringPoints": [
+            "high confidence",
+            "CaseDependant Matched"
+          ],
+          "sample": "FirstName",
+          "fileName": "platform.html",
+          "language": "html",
+          "excerpt": "                                     </label>\n                                     <div class=\"mktoGutter mktoHasWidth\">\n                                     </div>\n                                     <input aria-labelledby=\"LblFirstName InstructFirstName\" aria-required=\"true\" class=\"mktoField mktoTextField mktoHasWidth mktoRequired\" id=\"FirstName_1_7\" maxlength=\"255\" name=\"FirstName\" type=\"text\"/>\n                                     <span class=\"mktoInstruction\" id=\"InstructFirstName\" tabindex=\"-1\">\n                                     </span>\n                                     <div class=\"mktoClear\">\n",
+          "isCorrect": null,
+          "occurrenceIndexes": [
+            {
+              "lineNumber": 3,
+              "startIndex": 64,
+              "endIndex": 73
+            },
+            {
+              "lineNumber": 3,
+              "startIndex": 82,
+              "endIndex": 91
+            },
+            {
+              "lineNumber": 3,
+              "startIndex": 176,
+              "endIndex": 185
+            },
+            {
+              "lineNumber": 3,
+              "startIndex": 213,
+              "endIndex": 222
+            },
+            {
+              "lineNumber": 4,
+              "startIndex": 79,
+              "endIndex": 88
+            }
+          ],
+          "startLocationLine": 6607,
+          "authorEmail": null
+        },
+        {
+          "score": 0.8,
+          "confidence": "high",
+          "scoringPoints": [
+            "high confidence",
+            "CaseDependant Matched"
+          ],
+          "sample": "FirstName",
+          "fileName": "platform/map-rendering.html",
+          "language": "html",
+          "excerpt": "                                      </label>\n                                      <div class=\"mktoGutter mktoHasWidth\">\n                                      </div>\n                                      <input aria-labelledby=\"LblFirstName InstructFirstName\" aria-required=\"true\" class=\"mktoField mktoTextField mktoHasWidth mktoRequired\" id=\"FirstName_1_7\" maxlength=\"255\" name=\"FirstName\" type=\"text\"/>\n                                      <span class=\"mktoInstruction\" id=\"InstructFirstName\" tabindex=\"-1\">\n                                      </span>\n                                      <div class=\"mktoClear\">\n",
+          "isCorrect": null,
+          "occurrenceIndexes": [
+            {
+              "lineNumber": 3,
+              "startIndex": 65,
+              "endIndex": 74
+            },
+            {
+              "lineNumber": 3,
+              "startIndex": 83,
+              "endIndex": 92
+            },
+            {
+              "lineNumber": 3,
+              "startIndex": 177,
+              "endIndex": 186
+            },
+            {
+              "lineNumber": 3,
+              "startIndex": 214,
+              "endIndex": 223
+            },
+            {
+              "lineNumber": 4,
+              "startIndex": 80,
+              "endIndex": 89
+            }
+          ],
+          "startLocationLine": 5239,
+          "authorEmail": null
+        },
+        {
+          "score": 0.8,
+          "confidence": "high",
+          "scoringPoints": [
+            "high confidence",
+            "CaseDependant Matched"
+          ],
+          "sample": "FirstName",
+          "fileName": "studio.html",
+          "language": "html",
+          "excerpt": "                                      </label>\n                                      <div class=\"mktoGutter mktoHasWidth\">\n                                      </div>\n                                      <input aria-labelledby=\"LblFirstName InstructFirstName\" aria-required=\"true\" class=\"mktoField mktoTextField mktoHasWidth mktoRequired\" id=\"FirstName_1_7\" maxlength=\"255\" name=\"FirstName\" type=\"text\"/>\n                                      <span class=\"mktoInstruction\" id=\"InstructFirstName\" tabindex=\"-1\">\n                                      </span>\n                                      <div class=\"mktoClear\">\n",
+          "isCorrect": null,
+          "occurrenceIndexes": [
+            {
+              "lineNumber": 3,
+              "startIndex": 65,
+              "endIndex": 74
+            },
+            {
+              "lineNumber": 3,
+              "startIndex": 83,
+              "endIndex": 92
+            },
+            {
+              "lineNumber": 3,
+              "startIndex": 177,
+              "endIndex": 186
+            },
+            {
+              "lineNumber": 3,
+              "startIndex": 214,
+              "endIndex": 223
+            },
+            {
+              "lineNumber": 4,
+              "startIndex": 80,
+              "endIndex": 89
+            }
+          ],
+          "startLocationLine": 5411,
+          "authorEmail": null
+        }
+      ]
+    },
+    {
+      "category": "Online Identifiers",
+      "element": "Cookies",
+      "dataSafetyElement": "Device or other IDs",
+      "dataSafetyCategory": "Device or other IDs",
+      "sensitive": false,
+      "sensitivity": "medium",
+      "score": 0.75,
+      "confidence": "high",
+      "scoringPoints": [
+        "medium confidence",
+        "Positive Word Matched"
+      ],
+      "occurrences": [
+        {
+          "score": 0.75,
+          "confidence": "high",
+          "scoringPoints": [
+            "medium confidence",
+            "Positive Word Matched"
+          ],
+          "sample": "cookie",
+          "fileName": "jp/platform/marketplace.html",
+          "language": "html",
+          "excerpt": "cookie_1646377208800\" src=\"https://assets.contently.com/",
+          "isCorrect": null,
+          "occurrenceIndexes": [
+            {
+              "lineNumber": 0,
+              "startIndex": 0,
+              "endIndex": 6
+            }
+          ],
+          "startLocationLine": 7409,
+          "authorEmail": null
+        },
+        {
+          "score": 0.75,
+          "confidence": "high",
+          "scoringPoints": [
+            "medium confidence",
+            "Positive Word Matched"
+          ],
+          "sample": "cookie",
+          "fileName": "here-code-conduct.html",
+          "language": "html",
+          "excerpt": "cookie_1646376480947\" src=\"https://assets.contently.com/",
+          "isCorrect": null,
+          "occurrenceIndexes": [
+            {
+              "lineNumber": 0,
+              "startIndex": 0,
+              "endIndex": 6
+            }
+          ],
+          "startLocationLine": 5144,
+          "authorEmail": null
+        },
+        {
+          "score": 0.75,
+          "confidence": "high",
+          "scoringPoints": [
+            "medium confidence",
+            "Positive Word Matched"
+          ],
+          "sample": "cookie",
+          "fileName": "platform.html",
+          "language": "html",
+          "excerpt": "cookie_1646377937302\" src=\"https://assets.contently.com/",
+          "isCorrect": null,
+          "occurrenceIndexes": [
+            {
+              "lineNumber": 0,
+              "startIndex": 0,
+              "endIndex": 6
+            }
+          ],
+          "startLocationLine": 8519,
+          "authorEmail": null
+        },
+        {
+          "score": 0.75,
+          "confidence": "high",
+          "scoringPoints": [
+            "medium confidence",
+            "Positive Word Matched"
+          ],
+          "sample": "cookie",
+          "fileName": "us-en/node/593.html",
+          "language": "html",
+          "excerpt": "cookie_1646376788127\" src=\"https://assets.contently.com/",
+          "isCorrect": null,
+          "occurrenceIndexes": [
+            {
+              "lineNumber": 0,
+              "startIndex": 0,
+              "endIndex": 6
+            }
+          ],
+          "startLocationLine": 5144,
+          "authorEmail": null
+        },
+        {
+          "score": 0.5,
+          "confidence": "low",
+          "scoringPoints": [
+            "medium confidence",
+            "Getter/Setter Regex Matched",
+            "CaseDependant Matched"
+          ],
+          "sample": "cookie",
+          "fileName": "here-offices.html",
+          "language": "html",
+          "excerpt": "=\"1\">\n  </iframe>\n  <iframe height=\"1\" id=\"utag_156_iframe\" src=\"//9565188.fls.doubleclick.net/activityi;src=9565188;type=;cat=;ord=1;num=966453201790.3849?\" style=\"display:none\" width=\"1\">\n  </iframe>\n  <script async=\"async\" src=\"//assets.contently.com/insights/insights.js\" type=\"text/javascript\">\n  </script>\n  <script src=\"https://analytics.twitter.com/i/adsct?type=javascript&amp;version=2.0.4&amp;p_id=Twitter&amp;p_user_id=0&amp;txn_id=o4g11&amp;events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D&amp;tw_sale_amount=0&amp;tw_order_quantity=0&amp;tw_iframe_status=0&amp;event_id=a04a2cd0-0f43-4e4d-83e9-2b20c6fcc455&amp;tw_document_href=https%3A%2F%2Fwww.here.com%2Fhere-offices&amp;tpx_cb=twttr.conversion.loadPixels\" type=\"text/javascript\">\n  </script>\n  <iframe id=\"xdomain_cookie_1646376500471\" src=\"https://assets.contently.com/xdomain/xdomain_cookie.html#%7B%22namespace%22%3A%22contently%3Aanalytics%22%2C%22window_origin%22%3A%22https%3A%2F%2Fwww.here.com%22%2C%22iframe_origin%22%3A%22https%3A%2F%2Fassets.contently.com%2Fxdomain%22%2C%22debug%22%3Afalse%7D\" style=\"display: none;\">\n  </iframe>\n  <iframe class=\"aamIframeLoaded\" id=\"destination_publishing_iframe_heredeutschlandgmbh_0\" name=\"destination_publishing_iframe_heredeutschlandgmbh_0_name\" sandbox=\"allow-scripts allow-same-origin\" src=\"https://heredeutschlandgmbh.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Fwww.here.com\" style=\"display: none; width: 0px; height: 0px;\" title=\"Adobe ID Syncing iFrame\">\n  </iframe>\n  <div class=\"drift-conductor-item drift-frame-chat drift-frame-chat-align-right with-transition\" id=\"drift-frame-chat\" style=\"right: 12px; width: 400px !important; max-width: none; position: fixed; z-index: 2147483647; max-height: 0px; bottom: 88px; visibility: hidden; min-width: 320px; height: 100",
+          "isCorrect": null,
+          "occurrenceIndexes": [
+            {
+              "lineNumber": 8,
+              "startIndex": 22,
+              "endIndex": 28
+            },
+            {
+              "lineNumber": 8,
+              "startIndex": 94,
+              "endIndex": 100
+            }
+          ],
+          "startLocationLine": 6655,
+          "authorEmail": null
+        }
+      ]
+    },
+    {
+      "category": "User Content Data",
+      "element": "NPS or CSAT Scores",
+      "dataSafetyElement": "Other user-generated content",
+      "dataSafetyCategory": "App activity",
+      "sensitive": false,
+      "sensitivity": "medium",
+      "score": 0.5,
+      "confidence": "low",
+      "scoringPoints": [
+        "high confidence"
+      ],
+      "occurrences": [
+        {
+          "score": 0.5,
+          "confidence": "low",
+          "scoringPoints": [
+            "high confidence"
+          ],
+          "sample": "customer-satisfaction",
+          "fileName": "solutions/supply-chain-optimization/siemens.html",
+          "language": "html",
+          "excerpt": "                    </div>\n                   </div>\n                  </div>\n                  <div class=\"feature-card-image feature-card-image--type-icon with-animation col-12 col-sm-6 col-md-4 anchorable\" data-anchor=\"#case-study-1---siemens-healthineers---usps-improves-customer-satisfaction\">\n                   <div class=\"feature-card-image__wrapper\">\n                    <div class=\"feature-card-image__icon\">\n                     <div class=\"field field--name-field-extra field--type-entity-reference-with-type\">\n",
+          "isCorrect": null,
+          "occurrenceIndexes": [
+            {
+              "lineNumber": 3,
+              "startIndex": 197,
+              "endIndex": 218
+            }
+          ],
+          "startLocationLine": 4867,
+          "authorEmail": null
+        }
+      ]
+    }
+  ],
+  "vendorList": [],
+  "interestsubjectList": [],
+  "created": "2022-03-04 07:21:44.080195",
+  "updated": "2022-03-04 07:21:44.080219"
+}

@@ -1,0 +1,2002 @@
+<!DOCTYPE html>
+<html lang="en-US">
+ <head>
+  <style>
+   @charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}
+  </style>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <script async="" src="https://cdn.bizible.com/xdc.js?_biz_u=837f28c9ef114430a5fe9e0073792083&amp;_biz_h=802059049&amp;cdn_o=a&amp;jsVer=4.22.02.16" type="text/javascript">
+  </script>
+  <script async="" src="//munchkin.marketo.net/161/munchkin.js" type="text/javascript">
+  </script>
+  <base href="/"/>
+  <title class="ng-binding" ng-bind="pageTitle">
+   HERE platform | Sign-up
+  </title>
+  <link href="bento/plugins/bento-olp-scaffolding/dist/assets/img/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+  <script async="" charset="utf-8" id="utag_13" src="//cdn.bizible.com/scripts/bizible.js" type="text/javascript">
+  </script>
+  <script async="" charset="utf-8" id="utag_13" src="//cdn.bizible.com/scripts/bizible.js" type="text/javascript">
+  </script>
+  <script async="" charset="utf-8" id="utag_12" src="//munchkin.marketo.net/munchkin.js" type="text/javascript">
+  </script>
+  <script src="bento/initializers/angularjs-1_8_2/vendor/angular.min.js?version=angularjs-1.8.2" type="text/javascript">
+  </script>
+  <script src="bento/initializers/angularjs-1_8_2/vendor/angular-modules-bundle.js?version=angularjs-1.8.2" type="text/javascript">
+  </script>
+  <script>
+   window.__env = {
+  productId: 'olp-home',
+  createdAt: undefined,
+  label: 'production',
+  updatedAt: '2022-02-28T09:59:39.051Z',
+  activeVersion: '3.3.5665516',
+  domain: 'platform.here.com',
+  environmentId: 'prd',
+  pathPrefix: undefined,
+  locked: false,
+  configVersion: '1.8.46',
+  config: {
+    stackId: 'prd',
+    hrnEnvPart: 'here',
+    hereAccount: {
+      clientId: 'YQijV3hAPdxySAVtE6ZT',
+      environment: 'https://account.here.com/',
+      noFB: true,
+      trackId: 'murloc',
+      realmInput: true,
+      noCloseFrameButton: true,
+      selfCertifyAge: true
+    },
+    haWeb: {
+      server: 'https://account.here.com',
+      endpoints: {
+        userinfo: '/openid/userinfo',
+        token: '/token',
+        authorize: '/authorize',
+        clearCookies: '/clearCookies'
+      },
+      options: {
+        clientId: 'YQijV3hAPdxySAVtE6ZT',
+        prompt: 'login',
+        responseType: 'code',
+        scope: 'openid email phone profile readwrite:ha',
+        realmInput: true,
+        selfCertifyAge: false,
+        signInScreenConfig: [ 'password' ],
+        theme: 'brand',
+        signInTemplate: 'olp',
+        currentWindow: true,
+        whiteListedRedirectDomains: [ '.hereolp.cn', '.here.com', 'localhost' ],
+        passiveAuthPollingInterval: 600,
+        refreshTokenFailureTimeout: 10,
+        refreshTokenExpirationWindow: 86400,
+        accessTokenExpirationWindow: 900
+      }
+    },
+    hereAccountAuthInterval: 900000,
+    hereAccountApiBase: 'https://account.api.here.com',
+    hereAccountAuthorization: '/authorization/v1.1',
+    hereAccountAuthentication: '/authentication/v1.1',
+    artifactServiceApiBase: 'https://artifact.api.platform.here.com',
+    lookupServiceApiBase: 'https://api-lookup.data.api.platform.here.com',
+    registryServicesApiBase: 'https://registry.services.api.platform.here.com',
+    loginAuthorization: {
+      serviceId: 'SERVICE-3fc7fa31-1ac0-495d-9eba-72898f6d2c5b',
+      actions: [ { action: 'read' } ]
+    },
+    loginConfig: { rememberRealm: true },
+    tempSyncToken: true,
+    i18nConfig: {
+      languages: {
+        en: {
+          locale: 'en-US',
+          text: 'English',
+          izumiText: 'data.gal.i18n.languages.english',
+          default: true
+        },
+        zh: {
+          locale: 'zh-CN',
+          text: 'Chinese',
+          izumiText: 'data.gal.i18n.languages.chinese'
+        },
+        ja: {
+          locale: 'ja-JP',
+          text: 'Japanese',
+          izumiText: 'data.gal.i18n.languages.japanese'
+        },
+        zz: {
+          locale: 'zz-ZZ',
+          text: 'Pseudo',
+          izumiText: 'data.gal.i18n.languages.pseudo',
+          featureFlag: 'featureFlagAdmin'
+        }
+      }
+    },
+    olpEventLoggerUtagPath: '//tags.tiqcdn.com/utag/here/hereolpportal/prod/utag.js',
+    sdk: 'com/here/platform/sdk/2.12.0.198/sdk-2.12.0.198.zip',
+    sdkReleaseNotes: 'https://developer.here.com/olp/documentation/release-notes',
+    devPortalChangelog: '/documentation/changelog',
+    portalServiceId: 'SERVICE-3fc7fa31-1ac0-495d-9eba-72898f6d2c5b',
+    marketplaceServiceId: 'SERVICE-4d0b3460-f185-4bd1-8ca0-0a36b50c0a26',
+    hereAccountServiceId: 'SERVICE-9dee088e-583f-4705-945a-bf363eea194f',
+    hereAccountAuthenticationServiceId: 'SERVICE-8e4da0d9-35ac-4646-b62f-9f70742fb012',
+    datastoreServiceId: 'SERVICE-3612ea21-67df-4743-b51b-be25a3173173',
+    pipelinesServiceId: 'SERVICE-30dfcc1d-f6fd-4698-bd13-b647b6ae06de',
+    artifactServiceId: 'SERVICE-8946a8d4-5d3e-4992-82d0-118cd7a0606a',
+    splunkServiceId: 'SERVICE-74141119-3097-4726-b360-4cb1d5ad5da5',
+    devPortalBaseUrl: 'https://developer.here.com',
+    mapcreatorBaseUrl: 'https://mapcreator.here.com',
+    keylightApplicationBaseUrl: 'https://listings.here.com',
+    keylightApiBaseUrl: 'https://here-api.subscription-suite.io',
+    keylightIdentityBaseUrl: 'https://sso.keylight.com',
+    keylightSelfServeShopId: '3ae88144-82ed-4441-a326-9ab0e90db4d2',
+    amplitudeKey: '7175f5a1b1199a65de8a420d3f9419c3',
+    portalDocsUrl: 'https://developer.here.com/olp',
+    openLocationBaseUrl: 'https://openlocation.here.com',
+    grafanaUrl: 'https://grafana.metrics.platform.here.com/login/generic_oauth',
+    statusPageUrl: 'https://here.service-now.com/status',
+    supportPortalBaseUrl: 'https://support.here.com',
+    herePricingSupportPlans: 'https://www.here.com/pricing/support-plans',
+    serviceNowUrl: 'https://here.service-now.com/csm',
+    landingPageSplunkUrl: 'https://splunk.metrics.platform.here.com',
+    faqServiceUrl: 'https://partners.here.com/en/here-faq-api',
+    decisionApiCacheTime: 5,
+    upgradedSupportCardDaysLimit: -1,
+    pluginInstaller: {
+      artifactsApiVersion: 'v1',
+      hrn: 'hrn:here:artifact:::com.here.platform.artifact:artifact-wagon-install:1.7.4',
+      filename: 'artifact-wagon-install-1.7.4.zip'
+    },
+    enableDocSearch: true,
+    launcher: [
+      {
+        id: 'topnav-launcher-marketplace-consumer',
+        text: 'Marketplace',
+        izumiText: 'data.gal.topnav.launcher.marketplace',
+        description: 'Discover and subscribe to resources',
+        izumiDescription: 'data.gal.topnav.launcher.marketplace.description',
+        href: '/marketplace/consumer',
+        featureFlag: 'permConsumerAccess'
+      },
+      {
+        id: 'topnav-launcher-marketplace-provider',
+        text: 'Marketplace Provider',
+        izumiText: 'data.gal.topnav.launcher.marketplace.provider',
+        description: 'Monetize and exchange assets',
+        izumiDescription: 'data.gal.topnav.launcher.marketplace.provider.description',
+        href: '/marketplace/provider',
+        featureFlag: 'permProviderAccess'
+      },
+      {
+        id: 'topnav-launcher-marketplace2-consumer',
+        text: 'Marketplace 2',
+        izumiText: 'data.gal.topnav.launcher.marketplace-2.0',
+        description: 'Discover and subscribe to resources',
+        izumiDescription: 'data.gal.topnav.launcher.marketplace.description',
+        href: '/marketplace-2/consumer',
+        featureFlag: 'permConsumer2Access'
+      },
+      {
+        id: 'topnav-launcher-marketplace2-provider',
+        text: 'Marketplace 2 Provider',
+        izumiText: 'data.gal.topnav.launcher.marketplace.provider-2.0',
+        description: 'Monetize and exchange assets',
+        izumiDescription: 'data.gal.topnav.launcher.marketplace.provider.description',
+        href: '/marketplace-2/provider',
+        featureFlag: 'permProvider2Access'
+      },
+      {
+        id: 'topnav-launcher-data',
+        text: 'Data',
+        izumiText: 'data.gal.topnav.launcher.data',
+        description: 'Store and organize in a shared repository',
+        izumiDescription: 'data.gal.topnav.launcher.data.description',
+        href: '/data',
+        featureFlag: 'permData'
+      },
+      {
+        id: 'topnav-launcher-pipelines',
+        text: 'Pipelines',
+        izumiText: 'data.gal.topnav.launcher.pipelines',
+        description: 'Compute and deploy processing logic',
+        izumiDescription: 'data.gal.topnav.launcher.pipelines.description',
+        href: '/pipelines',
+        featureFlag: 'permPipelines'
+      },
+      {
+        id: 'topnav-launcher-customtemplates',
+        text: 'Customizable Pipeline Templates',
+        izumiText: 'data.gal.topnav.launcher.customtemplates',
+        description: 'Configure prebuilt pipelines to process data',
+        izumiDescription: 'data.gal.topnav.launcher.customtemplates.description',
+        href: '/tools/customizable-pipeline-templates',
+        featureFlag: 'permPipelines'
+      },
+      {
+        id: 'topnav-launcher-services',
+        text: 'Services',
+        izumiText: 'data.gal.topnav.launcher.services',
+        description: 'Use location logic in your product',
+        izumiDescription: 'data.gal.topnav.launcher.services.description',
+        href: '/services',
+        featureFlag: 'olpServicesUser'
+      },
+      {
+        id: 'topnav-launcher-sdk-and-tools',
+        text: 'SDK & Tools',
+        izumiText: 'data.gal.topnav.launcher.sdk-and-tools',
+        description: 'Develop on your local computer',
+        izumiDescription: 'data.gal.topnav.launcher.sdk-and-tools.description',
+        href: '/sdk',
+        featureFlag: 'permArtifact'
+      },
+      {
+        id: 'topnav-launcher-datainspector',
+        text: 'Data Inspector',
+        izumiText: 'data.gal.topnav.launcher.datainspector',
+        description: 'Inspect and visualize your local data',
+        izumiDescription: 'data.gal.topnav.launcher.datainspector.description',
+        href: '/data-inspector',
+        featureFlag: 'permData'
+      },
+      {
+        id: 'topnav-launcher-olp-labs',
+        text: 'Labs',
+        izumiText: 'data.gal.topnav.launcher.olp-labs',
+        description: 'Test drive pre-release software from HERE',
+        izumiDescription: 'data.gal.topnav.launcher.olp-labs.description',
+        href: '/tools/labs',
+        featureFlag: 'permLabs'
+      },
+      {
+        id: 'topnav-launcher-mapcreator',
+        text: 'Map Creator',
+        izumiText: 'data.gal.topnav.launcher.mapcreator',
+        description: 'Edit HERE map and help keep the world up to date',
+        izumiDescription: 'data.gal.topnav.launcher.mapcreator.description',
+        href: '/mapcreator',
+        target: '_blank'
+      },
+      {
+        id: 'topnav-launcher-studio',
+        text: 'HERE Studio',
+        izumiText: 'data.gal.topnav.launcher.studio',
+        description: 'Upload, style and edit your interactive map layers without coding',
+        izumiDescription: 'data.gal.topnav.launcher.studio.description',
+        href: '/studio'
+      },
+      {
+        id: 'topnav-launcher-workfloweditor',
+        text: 'HERE Workflow Editor',
+        izumiText: 'data.gal.topnav.launcher.workfloweditor',
+        description: 'Manage workflows and apply pre-built patterns',
+        izumiDescription: 'data.gal.topnav.launcher.workfloweditor.description',
+        href: '/workfloweditor',
+        featureFlag: 'permWorkflowEditor'
+      },
+      {
+        id: 'topnav-launcher-download-center',
+        text: 'Download Center',
+        izumiText: 'data.gal.topnav.launcher.marketplace.dowload-center',
+        description: 'Download map data',
+        izumiDescription: 'data.gal.topnav.launcher.marketplace.download-center.description',
+        href: '/marketplace/download-center',
+        featureFlag: 'permConsumerDownloadCenterAccess'
+      },
+      {
+        id: 'topnav-launcher-primary-monitoring-and-alerts',
+        text: 'Primary Monitoring & Alerts',
+        izumiText: 'data.gal.topnav.launcher.primary-monitoring-and-alerts',
+        href: 'https://grafana.metrics.platform.here.com',
+        description: 'EU West (Ireland) - Powered by Grafana',
+        izumiDescription: 'data.gal.topnav.launcher.primary-monitoring-and-alerts.description',
+        target: '_blank',
+        featureFlag: 'permGrafana'
+      },
+      {
+        id: 'topnav-launcher-secondary-monitoring-and-alerts',
+        text: 'Secondary Monitoring & Alerts',
+        izumiText: 'data.gal.topnav.launcher.secondary-monitoring-and-alerts',
+        href: 'https://grafana.metrics.us-west-2.platform.here.com',
+        description: 'US West (Oregon) - Powered by Grafana',
+        izumiDescription: 'data.gal.topnav.launcher.secondary-monitoring-and-alerts.description',
+        target: '_blank',
+        featureFlag: 'permGrafana'
+      },
+      {
+        id: 'topnav-launcher-logs',
+        text: 'Logs',
+        izumiText: 'data.gal.topnav.launcher.logs',
+        href: 'https://splunk.metrics.platform.here.com',
+        description: 'Powered by Splunk',
+        izumiDescription: 'data.gal.topnav.launcher.powered-by-splunk',
+        target: '_blank',
+        featureFlag: 'permSplunk'
+      },
+      {
+        id: 'topnav-launcher-projects-manager',
+        text: 'Projects Manager',
+        izumiText: 'data.gal.topnav.launcher.projects-manager',
+        href: '/management/projects',
+        description: 'Manage projects accesses, permissions etc.',
+        izumiDescription: 'data.gal.topnav.launcher.projects-manager.description'
+      },
+      {
+        id: 'topnav-launcher-access-manager',
+        text: 'Access Manager',
+        izumiText: 'data.gal.topnav.launcher.access-manager',
+        href: '/admin',
+        description: 'Manage group accesses, permissions etc.',
+        izumiDescription: 'data.gal.topnav.launcher.access-manager.description'
+      },
+      {
+        id: 'topnav-launcher-usage-manager',
+        text: 'Usage Manager',
+        izumiText: 'data.gal.topnav.launcher.usage-manager',
+        href: '/management/usage',
+        description: 'View and filter for usage data',
+        izumiDescription: 'data.gal.topnav.launcher.usage-manager.description',
+        featureFlag: { flags: [ 'isCLM', 'tempIsUsageEnabled' ] }
+      },
+      {
+        id: 'topnav-launcher-device-management',
+        text: 'Device Management',
+        href: 'https://connect.ota.here.com',
+        description: 'Connect and manage your devices over-the-air',
+        target: '_blank',
+        featureFlag: 'otaUser'
+      },
+      {
+        id: 'topnav-launcher-subscriptions-and-billing-portal',
+        text: 'Subscriptions & Billing Portal',
+        izumiText: 'data.gal.topnav.launcher.billing-and-subscriptions-portal',
+        href: 'https://listings.here.com/account',
+        description: 'Manage subscriptions & invoices',
+        izumiDescription: 'data.gal.topnav.launcher.billing-and-subscriptions-portal.description',
+        target: '_blank',
+        featureFlag: 'permKeylightBilling'
+      },
+      {
+        id: 'topnav-launcher-sales-portal',
+        text: 'Sales Portal',
+        izumiText: 'data.gal.topnav.launcher.sales-portal',
+        href: 'https://listings.here.com/partner',
+        description: 'Create & manage quotes',
+        izumiDescription: 'data.gal.topnav.launcher.sales-portal.description',
+        target: '_blank',
+        featureFlag: 'permKeylightPartner'
+      },
+      {
+        id: 'topnav-launcher-sales-portal',
+        text: 'Sales Portal',
+        izumiText: 'data.gal.topnav.launcher.sales-portal',
+        href: 'https://listings.here.com/partner',
+        description: 'Create & manage quotes',
+        izumiDescription: 'data.gal.topnav.launcher.sales-portal.description',
+        target: '_blank',
+        featureFlag: 'permKeylightReseller'
+      }
+    ],
+    footer_v2: {
+      items: [
+        {
+          type: 'link',
+          id: 'footer-link-service-terms',
+          text: 'Service terms',
+          izumiText: 'data.plugins.bento-olp-scaffolding.footer.service-terms',
+          href: 'https://legal.here.com/terms',
+          target: '_blank'
+        },
+        {
+          type: 'link',
+          id: 'footer-link-privacy-policy',
+          text: 'Privacy policy',
+          izumiText: 'data.plugins.bento-olp-scaffolding.footer.privacy-policy',
+          href: 'https://legal.here.com/privacy/policy',
+          target: '_blank'
+        },
+        {
+          type: 'link',
+          id: 'footer-link-cookie-policy',
+          text: 'Cookie policy',
+          izumiText: 'data.plugins.bento-olp-scaffolding.footer.cookie-policy',
+          href: 'https://legal.here.com/privacy/cookies',
+          target: '_blank'
+        },
+        {
+          type: 'link',
+          id: 'footer-link-consent-preferences',
+          text: 'Consent preferences',
+          izumiText: 'data.plugins.bento-olp-scaffolding.footer.consent-preferences',
+          href: '',
+          onClick: 'changeConsent'
+        },
+        {
+          type: 'link',
+          id: 'footer-link-system-status',
+          text: 'System status',
+          izumiText: 'data.plugins.bento-olp-scaffolding.footer.system-status',
+          href: 'https://status.here.com/status',
+          target: '_blank'
+        },
+        {
+          type: 'link',
+          id: 'footer-button-contact-us',
+          text: 'Contact us',
+          izumiText: 'data.plugins.bento-olp-scaffolding.footer.contact-us',
+          href: '/contact-us',
+          featureFlagHref: 'serviceNow'
+        }
+      ]
+    },
+    featureFlags: [
+      { name: 'viewObjectStoreLayer' },
+      { name: 'show-projects', qsParam: 'show-projects' },
+      {
+        name: 'olpLabsDevelopers',
+        groupIds: [ 'GROUP-2acb71aa-67f5-46ea-853d-aec411d908a7' ]
+      },
+      { name: 'show-crc', qsParam: 'show-crc' },
+      { name: 'pipeline-batch-1.5.0', qsParam: 'pipeline-batch-1.5.0' },
+      {
+        name: 'pipeline-stream-1.5.0',
+        qsParam: 'pipeline-stream-1.5.0'
+      },
+      {
+        name: 'pipeline-stream-2.0.0',
+        qsParam: 'pipeline-stream-2.0.0'
+      },
+      { name: 'pipeline-batch-2.0.0', qsParam: 'pipeline-batch-2.0.0' },
+      { name: 'pipeline-batch-2.1.0', qsParam: 'pipeline-batch-2.1.0' },
+      {
+        name: 'pipeline-high-availability',
+        qsParam: 'pipeline-high-availability',
+        environments: [ 'prd' ]
+      },
+      { name: 'statusPageLink', qsParam: 'statusPageLink' },
+      { name: 'viewArchiveLayer' },
+      { name: 'serviceNow', qsParam: 'serviceNow' },
+      {
+        name: 'isChina',
+        environments: [ 'cn-stg', 'cn-prd' ],
+        qsParam: 'isChina'
+      },
+      { name: 'marketplaceReadyFlagSwitch' },
+      { name: 'layerDeletion' },
+      { name: 'schemaValidationFlag' },
+      { name: 'multiRegion', qsParam: 'multiRegion' },
+      { name: 'viewCatalogVersionDeletion' },
+      {
+        name: 'olpServicesUser',
+        permissions: [
+          {
+            serviceId: 'SERVICE-cc6db5a5-2135-4003-a2fa-5985a52dbcb0',
+            actions: [ { effect: 'allow', action: 'list' } ]
+          }
+        ]
+      },
+      {
+        name: 'otaUser',
+        customerIds: [ 'CUST-33f3647b-44f3-4790-8849-df15be18909f' ],
+        qsParam: 'otaUser'
+      },
+      {
+        name: 'CatalogProjectLinkage',
+        qsParam: 'CatalogProjectLinkage'
+      },
+      {
+        name: 'permArtifact',
+        permissions: [
+          {
+            serviceId: 'SERVICE-8946a8d4-5d3e-4992-82d0-118cd7a0606a',
+            actions: [ { effect: 'allow', action: 'accessApi' } ]
+          }
+        ],
+        qsParam: 'permArtifact'
+      },
+      {
+        name: 'permWorkflowEditor',
+        customerIds: [
+          'CUST-2042a83e-3bbf-4fbe-84a1-96b648c44087',
+          'CUST-6790438d-7955-4026-a3e5-6865cc00abb4',
+          'CUST-0cfa5ffa-b816-4322-8176-fba76774df75',
+          'CUST-407a5c88-967d-4785-be4f-cb018fce5731',
+          'CUST-4dd52106-bdec-49ed-8aee-855c4503fa5c',
+          'CUST-7ad4b916-2bc8-42f4-9c0d-d67999670d5e',
+          'CUST-9e6ae7ac-1a90-4bfd-8aa0-04deeae4af26',
+          'CUST-a462931e-0330-453e-b02b-6dcba488bc38'
+        ]
+      },
+      {
+        name: 'tempNonClmAccountError',
+        qsParam: 'tempNonClmAccountError'
+      },
+      { name: 'tempIsUsageEnabled', qsParam: 'tempIsUsageEnabled' },
+      {
+        name: 'tempAppViewRolesErrorFix',
+        qsParam: 'tempAppViewRolesErrorFix'
+      },
+      {
+        name: 'tempTrackingIdFromInvite',
+        qsParam: 'tempTrackingIdFromInvite'
+      },
+      {
+        name: 'tempTrackSignUpTimeout',
+        qsParam: 'tempTrackSignUpTimeout'
+      },
+      {
+        name: 'tempPartnerGetstartedCard',
+        qsParam: 'tempPartnerGetstartedCard'
+      },
+      {
+        name: 'tempPortalMigrationRedirect',
+        qsParam: 'tempPortalMigrationRedirect'
+      },
+      {
+        name: 'tempCorrelationDomainAlignment',
+        qsParam: 'tempCorrelationDomainAlignment'
+      },
+      {
+        name: 'tempCrossRealmManagerRole',
+        qsParam: 'tempCrossRealmManagerRole'
+      },
+      {
+        name: 'LocationServiceProjectLinkage',
+        qsParam: 'LocationServiceProjectLinkage'
+      },
+      {
+        name: 'permConsumer2Access',
+        permissions: [
+          {
+            serviceId: 'SERVICE-742b0574-1f39-4709-9d71-145f1713760d',
+            actions: [
+              {
+                effect: 'allow',
+                action: 'readResource',
+                resource: 'hrn:here:portal::olp-here:marketplace2:consumer'
+              }
+            ]
+          }
+        ],
+        qsParam: 'permConsumer2Access'
+      },
+      {
+        name: 'permProvider2Access',
+        roles: [ 'OrgAdmin' ],
+        permissions: [
+          {
+            serviceId: 'SERVICE-742b0574-1f39-4709-9d71-145f1713760d',
+            actions: [
+              {
+                effect: 'allow',
+                action: 'readResource',
+                resource: 'hrn:here:portal::olp-here:marketplace2:provider'
+              }
+            ]
+          }
+        ],
+        qsParam: 'permProvider2Access'
+      },
+      { name: 'tempLog4jNotice', qsParam: 'tempLog4jNotice' }
+    ],
+    shoutouts: [
+      {
+        id: '2021-10-20_interactive-map',
+        header: 'Interactive map layer inspection now available',
+        body: 'Data Inspector in the HERE platform now allows you to inspect interactive map layers: view the data structure and see a visualization of the data on the map. Try it with your own interactive map layers via the Inspect tab.',
+        frequency: 'once',
+        productIds: [ 'olp-data', 'data-inspector' ],
+        startDate: '2021-10-20T00:00:00.000Z',
+        endDate: '2021-11-08T00:00:00.000Z'
+      },
+      {
+        id: 'maintenance-notice-2021-12-18',
+        header: 'Maintenance notice',
+        body: 'The HERE Workspace UI will be undergoing maintenance on Saturday, December 18, 2021 beginning at 09:00 UTC. This maintenance period is expected to last 1 hour and during that time users may be unable to access the Workspace UI and/or Billing and usage reports.',
+        variant: 'warning',
+        frequency: 'daily',
+        startDate: '2021-12-16T00:00:00.000Z',
+        endDate: '2021-12-18T10:00:00.000Z'
+      }
+    ]
+  },
+  activeVersionCreatedAt: '2022-02-22T14:55:50.103Z',
+  root: {
+    productId: 'olp-home',
+    createdAt: undefined,
+    label: 'production',
+    updatedAt: '2022-02-28T09:59:39.051Z',
+    activeVersion: '3.3.5665516',
+    domain: 'platform.here.com',
+    environmentId: 'prd',
+    pathPrefix: undefined,
+    locked: false,
+    configVersion: '1.8.46',
+    config: {
+      stackId: 'prd',
+      hrnEnvPart: 'here',
+      hereAccount: {
+        clientId: 'YQijV3hAPdxySAVtE6ZT',
+        environment: 'https://account.here.com/',
+        noFB: true,
+        trackId: 'murloc',
+        realmInput: true,
+        noCloseFrameButton: true,
+        selfCertifyAge: true
+      },
+      haWeb: {
+        server: 'https://account.here.com',
+        endpoints: {
+          userinfo: '/openid/userinfo',
+          token: '/token',
+          authorize: '/authorize',
+          clearCookies: '/clearCookies'
+        },
+        options: {
+          clientId: 'YQijV3hAPdxySAVtE6ZT',
+          prompt: 'login',
+          responseType: 'code',
+          scope: 'openid email phone profile readwrite:ha',
+          realmInput: true,
+          selfCertifyAge: false,
+          signInScreenConfig: [ 'password' ],
+          theme: 'brand',
+          signInTemplate: 'olp',
+          currentWindow: true,
+          whiteListedRedirectDomains: [ '.hereolp.cn', '.here.com', 'localhost' ],
+          passiveAuthPollingInterval: 600,
+          refreshTokenFailureTimeout: 10,
+          refreshTokenExpirationWindow: 86400,
+          accessTokenExpirationWindow: 900
+        }
+      },
+      hereAccountAuthInterval: 900000,
+      hereAccountApiBase: 'https://account.api.here.com',
+      hereAccountAuthorization: '/authorization/v1.1',
+      hereAccountAuthentication: '/authentication/v1.1',
+      artifactServiceApiBase: 'https://artifact.api.platform.here.com',
+      lookupServiceApiBase: 'https://api-lookup.data.api.platform.here.com',
+      registryServicesApiBase: 'https://registry.services.api.platform.here.com',
+      loginAuthorization: {
+        serviceId: 'SERVICE-3fc7fa31-1ac0-495d-9eba-72898f6d2c5b',
+        actions: [ { action: 'read' } ]
+      },
+      loginConfig: { rememberRealm: true },
+      tempSyncToken: true,
+      i18nConfig: {
+        languages: {
+          en: {
+            locale: 'en-US',
+            text: 'English',
+            izumiText: 'data.gal.i18n.languages.english',
+            default: true
+          },
+          zh: {
+            locale: 'zh-CN',
+            text: 'Chinese',
+            izumiText: 'data.gal.i18n.languages.chinese'
+          },
+          ja: {
+            locale: 'ja-JP',
+            text: 'Japanese',
+            izumiText: 'data.gal.i18n.languages.japanese'
+          },
+          zz: {
+            locale: 'zz-ZZ',
+            text: 'Pseudo',
+            izumiText: 'data.gal.i18n.languages.pseudo',
+            featureFlag: 'featureFlagAdmin'
+          }
+        }
+      },
+      olpEventLoggerUtagPath: '//tags.tiqcdn.com/utag/here/hereolpportal/prod/utag.js',
+      sdk: 'com/here/platform/sdk/2.12.0.198/sdk-2.12.0.198.zip',
+      sdkReleaseNotes: 'https://developer.here.com/olp/documentation/release-notes',
+      devPortalChangelog: '/documentation/changelog',
+      portalServiceId: 'SERVICE-3fc7fa31-1ac0-495d-9eba-72898f6d2c5b',
+      marketplaceServiceId: 'SERVICE-4d0b3460-f185-4bd1-8ca0-0a36b50c0a26',
+      hereAccountServiceId: 'SERVICE-9dee088e-583f-4705-945a-bf363eea194f',
+      hereAccountAuthenticationServiceId: 'SERVICE-8e4da0d9-35ac-4646-b62f-9f70742fb012',
+      datastoreServiceId: 'SERVICE-3612ea21-67df-4743-b51b-be25a3173173',
+      pipelinesServiceId: 'SERVICE-30dfcc1d-f6fd-4698-bd13-b647b6ae06de',
+      artifactServiceId: 'SERVICE-8946a8d4-5d3e-4992-82d0-118cd7a0606a',
+      splunkServiceId: 'SERVICE-74141119-3097-4726-b360-4cb1d5ad5da5',
+      devPortalBaseUrl: 'https://developer.here.com',
+      mapcreatorBaseUrl: 'https://mapcreator.here.com',
+      keylightApplicationBaseUrl: 'https://listings.here.com',
+      keylightApiBaseUrl: 'https://here-api.subscription-suite.io',
+      keylightIdentityBaseUrl: 'https://sso.keylight.com',
+      keylightSelfServeShopId: '3ae88144-82ed-4441-a326-9ab0e90db4d2',
+      amplitudeKey: '7175f5a1b1199a65de8a420d3f9419c3',
+      portalDocsUrl: 'https://developer.here.com/olp',
+      openLocationBaseUrl: 'https://openlocation.here.com',
+      grafanaUrl: 'https://grafana.metrics.platform.here.com/login/generic_oauth',
+      statusPageUrl: 'https://here.service-now.com/status',
+      supportPortalBaseUrl: 'https://support.here.com',
+      herePricingSupportPlans: 'https://www.here.com/pricing/support-plans',
+      serviceNowUrl: 'https://here.service-now.com/csm',
+      landingPageSplunkUrl: 'https://splunk.metrics.platform.here.com',
+      faqServiceUrl: 'https://partners.here.com/en/here-faq-api',
+      decisionApiCacheTime: 5,
+      upgradedSupportCardDaysLimit: -1,
+      pluginInstaller: {
+        artifactsApiVersion: 'v1',
+        hrn: 'hrn:here:artifact:::com.here.platform.artifact:artifact-wagon-install:1.7.4',
+        filename: 'artifact-wagon-install-1.7.4.zip'
+      },
+      enableDocSearch: true,
+      launcher: [
+        {
+          id: 'topnav-launcher-marketplace-consumer',
+          text: 'Marketplace',
+          izumiText: 'data.gal.topnav.launcher.marketplace',
+          description: 'Discover and subscribe to resources',
+          izumiDescription: 'data.gal.topnav.launcher.marketplace.description',
+          href: '/marketplace/consumer',
+          featureFlag: 'permConsumerAccess'
+        },
+        {
+          id: 'topnav-launcher-marketplace-provider',
+          text: 'Marketplace Provider',
+          izumiText: 'data.gal.topnav.launcher.marketplace.provider',
+          description: 'Monetize and exchange assets',
+          izumiDescription: 'data.gal.topnav.launcher.marketplace.provider.description',
+          href: '/marketplace/provider',
+          featureFlag: 'permProviderAccess'
+        },
+        {
+          id: 'topnav-launcher-marketplace2-consumer',
+          text: 'Marketplace 2',
+          izumiText: 'data.gal.topnav.launcher.marketplace-2.0',
+          description: 'Discover and subscribe to resources',
+          izumiDescription: 'data.gal.topnav.launcher.marketplace.description',
+          href: '/marketplace-2/consumer',
+          featureFlag: 'permConsumer2Access'
+        },
+        {
+          id: 'topnav-launcher-marketplace2-provider',
+          text: 'Marketplace 2 Provider',
+          izumiText: 'data.gal.topnav.launcher.marketplace.provider-2.0',
+          description: 'Monetize and exchange assets',
+          izumiDescription: 'data.gal.topnav.launcher.marketplace.provider.description',
+          href: '/marketplace-2/provider',
+          featureFlag: 'permProvider2Access'
+        },
+        {
+          id: 'topnav-launcher-data',
+          text: 'Data',
+          izumiText: 'data.gal.topnav.launcher.data',
+          description: 'Store and organize in a shared repository',
+          izumiDescription: 'data.gal.topnav.launcher.data.description',
+          href: '/data',
+          featureFlag: 'permData'
+        },
+        {
+          id: 'topnav-launcher-pipelines',
+          text: 'Pipelines',
+          izumiText: 'data.gal.topnav.launcher.pipelines',
+          description: 'Compute and deploy processing logic',
+          izumiDescription: 'data.gal.topnav.launcher.pipelines.description',
+          href: '/pipelines',
+          featureFlag: 'permPipelines'
+        },
+        {
+          id: 'topnav-launcher-customtemplates',
+          text: 'Customizable Pipeline Templates',
+          izumiText: 'data.gal.topnav.launcher.customtemplates',
+          description: 'Configure prebuilt pipelines to process data',
+          izumiDescription: 'data.gal.topnav.launcher.customtemplates.description',
+          href: '/tools/customizable-pipeline-templates',
+          featureFlag: 'permPipelines'
+        },
+        {
+          id: 'topnav-launcher-services',
+          text: 'Services',
+          izumiText: 'data.gal.topnav.launcher.services',
+          description: 'Use location logic in your product',
+          izumiDescription: 'data.gal.topnav.launcher.services.description',
+          href: '/services',
+          featureFlag: 'olpServicesUser'
+        },
+        {
+          id: 'topnav-launcher-sdk-and-tools',
+          text: 'SDK & Tools',
+          izumiText: 'data.gal.topnav.launcher.sdk-and-tools',
+          description: 'Develop on your local computer',
+          izumiDescription: 'data.gal.topnav.launcher.sdk-and-tools.description',
+          href: '/sdk',
+          featureFlag: 'permArtifact'
+        },
+        {
+          id: 'topnav-launcher-datainspector',
+          text: 'Data Inspector',
+          izumiText: 'data.gal.topnav.launcher.datainspector',
+          description: 'Inspect and visualize your local data',
+          izumiDescription: 'data.gal.topnav.launcher.datainspector.description',
+          href: '/data-inspector',
+          featureFlag: 'permData'
+        },
+        {
+          id: 'topnav-launcher-olp-labs',
+          text: 'Labs',
+          izumiText: 'data.gal.topnav.launcher.olp-labs',
+          description: 'Test drive pre-release software from HERE',
+          izumiDescription: 'data.gal.topnav.launcher.olp-labs.description',
+          href: '/tools/labs',
+          featureFlag: 'permLabs'
+        },
+        {
+          id: 'topnav-launcher-mapcreator',
+          text: 'Map Creator',
+          izumiText: 'data.gal.topnav.launcher.mapcreator',
+          description: 'Edit HERE map and help keep the world up to date',
+          izumiDescription: 'data.gal.topnav.launcher.mapcreator.description',
+          href: '/mapcreator',
+          target: '_blank'
+        },
+        {
+          id: 'topnav-launcher-studio',
+          text: 'HERE Studio',
+          izumiText: 'data.gal.topnav.launcher.studio',
+          description: 'Upload, style and edit your interactive map layers without coding',
+          izumiDescription: 'data.gal.topnav.launcher.studio.description',
+          href: '/studio'
+        },
+        {
+          id: 'topnav-launcher-workfloweditor',
+          text: 'HERE Workflow Editor',
+          izumiText: 'data.gal.topnav.launcher.workfloweditor',
+          description: 'Manage workflows and apply pre-built patterns',
+          izumiDescription: 'data.gal.topnav.launcher.workfloweditor.description',
+          href: '/workfloweditor',
+          featureFlag: 'permWorkflowEditor'
+        },
+        {
+          id: 'topnav-launcher-download-center',
+          text: 'Download Center',
+          izumiText: 'data.gal.topnav.launcher.marketplace.dowload-center',
+          description: 'Download map data',
+          izumiDescription: 'data.gal.topnav.launcher.marketplace.download-center.description',
+          href: '/marketplace/download-center',
+          featureFlag: 'permConsumerDownloadCenterAccess'
+        },
+        {
+          id: 'topnav-launcher-primary-monitoring-and-alerts',
+          text: 'Primary Monitoring & Alerts',
+          izumiText: 'data.gal.topnav.launcher.primary-monitoring-and-alerts',
+          href: 'https://grafana.metrics.platform.here.com',
+          description: 'EU West (Ireland) - Powered by Grafana',
+          izumiDescription: 'data.gal.topnav.launcher.primary-monitoring-and-alerts.description',
+          target: '_blank',
+          featureFlag: 'permGrafana'
+        },
+        {
+          id: 'topnav-launcher-secondary-monitoring-and-alerts',
+          text: 'Secondary Monitoring & Alerts',
+          izumiText: 'data.gal.topnav.launcher.secondary-monitoring-and-alerts',
+          href: 'https://grafana.metrics.us-west-2.platform.here.com',
+          description: 'US West (Oregon) - Powered by Grafana',
+          izumiDescription: 'data.gal.topnav.launcher.secondary-monitoring-and-alerts.description',
+          target: '_blank',
+          featureFlag: 'permGrafana'
+        },
+        {
+          id: 'topnav-launcher-logs',
+          text: 'Logs',
+          izumiText: 'data.gal.topnav.launcher.logs',
+          href: 'https://splunk.metrics.platform.here.com',
+          description: 'Powered by Splunk',
+          izumiDescription: 'data.gal.topnav.launcher.powered-by-splunk',
+          target: '_blank',
+          featureFlag: 'permSplunk'
+        },
+        {
+          id: 'topnav-launcher-projects-manager',
+          text: 'Projects Manager',
+          izumiText: 'data.gal.topnav.launcher.projects-manager',
+          href: '/management/projects',
+          description: 'Manage projects accesses, permissions etc.',
+          izumiDescription: 'data.gal.topnav.launcher.projects-manager.description'
+        },
+        {
+          id: 'topnav-launcher-access-manager',
+          text: 'Access Manager',
+          izumiText: 'data.gal.topnav.launcher.access-manager',
+          href: '/admin',
+          description: 'Manage group accesses, permissions etc.',
+          izumiDescription: 'data.gal.topnav.launcher.access-manager.description'
+        },
+        {
+          id: 'topnav-launcher-usage-manager',
+          text: 'Usage Manager',
+          izumiText: 'data.gal.topnav.launcher.usage-manager',
+          href: '/management/usage',
+          description: 'View and filter for usage data',
+          izumiDescription: 'data.gal.topnav.launcher.usage-manager.description',
+          featureFlag: { flags: [ 'isCLM', 'tempIsUsageEnabled' ] }
+        },
+        {
+          id: 'topnav-launcher-device-management',
+          text: 'Device Management',
+          href: 'https://connect.ota.here.com',
+          description: 'Connect and manage your devices over-the-air',
+          target: '_blank',
+          featureFlag: 'otaUser'
+        },
+        {
+          id: 'topnav-launcher-subscriptions-and-billing-portal',
+          text: 'Subscriptions & Billing Portal',
+          izumiText: 'data.gal.topnav.launcher.billing-and-subscriptions-portal',
+          href: 'https://listings.here.com/account',
+          description: 'Manage subscriptions & invoices',
+          izumiDescription: 'data.gal.topnav.launcher.billing-and-subscriptions-portal.description',
+          target: '_blank',
+          featureFlag: 'permKeylightBilling'
+        },
+        {
+          id: 'topnav-launcher-sales-portal',
+          text: 'Sales Portal',
+          izumiText: 'data.gal.topnav.launcher.sales-portal',
+          href: 'https://listings.here.com/partner',
+          description: 'Create & manage quotes',
+          izumiDescription: 'data.gal.topnav.launcher.sales-portal.description',
+          target: '_blank',
+          featureFlag: 'permKeylightPartner'
+        },
+        {
+          id: 'topnav-launcher-sales-portal',
+          text: 'Sales Portal',
+          izumiText: 'data.gal.topnav.launcher.sales-portal',
+          href: 'https://listings.here.com/partner',
+          description: 'Create & manage quotes',
+          izumiDescription: 'data.gal.topnav.launcher.sales-portal.description',
+          target: '_blank',
+          featureFlag: 'permKeylightReseller'
+        }
+      ],
+      footer_v2: {
+        items: [
+          {
+            type: 'link',
+            id: 'footer-link-service-terms',
+            text: 'Service terms',
+            izumiText: 'data.plugins.bento-olp-scaffolding.footer.service-terms',
+            href: 'https://legal.here.com/terms',
+            target: '_blank'
+          },
+          {
+            type: 'link',
+            id: 'footer-link-privacy-policy',
+            text: 'Privacy policy',
+            izumiText: 'data.plugins.bento-olp-scaffolding.footer.privacy-policy',
+            href: 'https://legal.here.com/privacy/policy',
+            target: '_blank'
+          },
+          {
+            type: 'link',
+            id: 'footer-link-cookie-policy',
+            text: 'Cookie policy',
+            izumiText: 'data.plugins.bento-olp-scaffolding.footer.cookie-policy',
+            href: 'https://legal.here.com/privacy/cookies',
+            target: '_blank'
+          },
+          {
+            type: 'link',
+            id: 'footer-link-consent-preferences',
+            text: 'Consent preferences',
+            izumiText: 'data.plugins.bento-olp-scaffolding.footer.consent-preferences',
+            href: '',
+            onClick: 'changeConsent'
+          },
+          {
+            type: 'link',
+            id: 'footer-link-system-status',
+            text: 'System status',
+            izumiText: 'data.plugins.bento-olp-scaffolding.footer.system-status',
+            href: 'https://status.here.com/status',
+            target: '_blank'
+          },
+          {
+            type: 'link',
+            id: 'footer-button-contact-us',
+            text: 'Contact us',
+            izumiText: 'data.plugins.bento-olp-scaffolding.footer.contact-us',
+            href: '/contact-us',
+            featureFlagHref: 'serviceNow'
+          }
+        ]
+      },
+      featureFlags: [
+        { name: 'viewObjectStoreLayer' },
+        { name: 'show-projects', qsParam: 'show-projects' },
+        {
+          name: 'olpLabsDevelopers',
+          groupIds: [ 'GROUP-2acb71aa-67f5-46ea-853d-aec411d908a7' ]
+        },
+        { name: 'show-crc', qsParam: 'show-crc' },
+        {
+          name: 'pipeline-batch-1.5.0',
+          qsParam: 'pipeline-batch-1.5.0'
+        },
+        {
+          name: 'pipeline-stream-1.5.0',
+          qsParam: 'pipeline-stream-1.5.0'
+        },
+        {
+          name: 'pipeline-stream-2.0.0',
+          qsParam: 'pipeline-stream-2.0.0'
+        },
+        {
+          name: 'pipeline-batch-2.0.0',
+          qsParam: 'pipeline-batch-2.0.0'
+        },
+        {
+          name: 'pipeline-batch-2.1.0',
+          qsParam: 'pipeline-batch-2.1.0'
+        },
+        {
+          name: 'pipeline-high-availability',
+          qsParam: 'pipeline-high-availability',
+          environments: [ 'prd' ]
+        },
+        { name: 'statusPageLink', qsParam: 'statusPageLink' },
+        { name: 'viewArchiveLayer' },
+        { name: 'serviceNow', qsParam: 'serviceNow' },
+        {
+          name: 'isChina',
+          environments: [ 'cn-stg', 'cn-prd' ],
+          qsParam: 'isChina'
+        },
+        { name: 'marketplaceReadyFlagSwitch' },
+        { name: 'layerDeletion' },
+        { name: 'schemaValidationFlag' },
+        { name: 'multiRegion', qsParam: 'multiRegion' },
+        { name: 'viewCatalogVersionDeletion' },
+        {
+          name: 'olpServicesUser',
+          permissions: [
+            {
+              serviceId: 'SERVICE-cc6db5a5-2135-4003-a2fa-5985a52dbcb0',
+              actions: [ { effect: 'allow', action: 'list' } ]
+            }
+          ]
+        },
+        {
+          name: 'otaUser',
+          customerIds: [ 'CUST-33f3647b-44f3-4790-8849-df15be18909f' ],
+          qsParam: 'otaUser'
+        },
+        {
+          name: 'CatalogProjectLinkage',
+          qsParam: 'CatalogProjectLinkage'
+        },
+        {
+          name: 'permArtifact',
+          permissions: [
+            {
+              serviceId: 'SERVICE-8946a8d4-5d3e-4992-82d0-118cd7a0606a',
+              actions: [ { effect: 'allow', action: 'accessApi' } ]
+            }
+          ],
+          qsParam: 'permArtifact'
+        },
+        {
+          name: 'permWorkflowEditor',
+          customerIds: [
+            'CUST-2042a83e-3bbf-4fbe-84a1-96b648c44087',
+            'CUST-6790438d-7955-4026-a3e5-6865cc00abb4',
+            'CUST-0cfa5ffa-b816-4322-8176-fba76774df75',
+            'CUST-407a5c88-967d-4785-be4f-cb018fce5731',
+            'CUST-4dd52106-bdec-49ed-8aee-855c4503fa5c',
+            'CUST-7ad4b916-2bc8-42f4-9c0d-d67999670d5e',
+            'CUST-9e6ae7ac-1a90-4bfd-8aa0-04deeae4af26',
+            'CUST-a462931e-0330-453e-b02b-6dcba488bc38'
+          ]
+        },
+        {
+          name: 'tempNonClmAccountError',
+          qsParam: 'tempNonClmAccountError'
+        },
+        { name: 'tempIsUsageEnabled', qsParam: 'tempIsUsageEnabled' },
+        {
+          name: 'tempAppViewRolesErrorFix',
+          qsParam: 'tempAppViewRolesErrorFix'
+        },
+        {
+          name: 'tempTrackingIdFromInvite',
+          qsParam: 'tempTrackingIdFromInvite'
+        },
+        {
+          name: 'tempTrackSignUpTimeout',
+          qsParam: 'tempTrackSignUpTimeout'
+        },
+        {
+          name: 'tempPartnerGetstartedCard',
+          qsParam: 'tempPartnerGetstartedCard'
+        },
+        {
+          name: 'tempPortalMigrationRedirect',
+          qsParam: 'tempPortalMigrationRedirect'
+        },
+        {
+          name: 'tempCorrelationDomainAlignment',
+          qsParam: 'tempCorrelationDomainAlignment'
+        },
+        {
+          name: 'tempCrossRealmManagerRole',
+          qsParam: 'tempCrossRealmManagerRole'
+        },
+        {
+          name: 'LocationServiceProjectLinkage',
+          qsParam: 'LocationServiceProjectLinkage'
+        },
+        {
+          name: 'permConsumer2Access',
+          permissions: [
+            {
+              serviceId: 'SERVICE-742b0574-1f39-4709-9d71-145f1713760d',
+              actions: [
+                {
+                  effect: 'allow',
+                  action: 'readResource',
+                  resource: 'hrn:here:portal::olp-here:marketplace2:consumer'
+                }
+              ]
+            }
+          ],
+          qsParam: 'permConsumer2Access'
+        },
+        {
+          name: 'permProvider2Access',
+          roles: [ 'OrgAdmin' ],
+          permissions: [
+            {
+              serviceId: 'SERVICE-742b0574-1f39-4709-9d71-145f1713760d',
+              actions: [
+                {
+                  effect: 'allow',
+                  action: 'readResource',
+                  resource: 'hrn:here:portal::olp-here:marketplace2:provider'
+                }
+              ]
+            }
+          ],
+          qsParam: 'permProvider2Access'
+        },
+        { name: 'tempLog4jNotice', qsParam: 'tempLog4jNotice' }
+      ],
+      shoutouts: [
+        {
+          id: '2021-10-20_interactive-map',
+          header: 'Interactive map layer inspection now available',
+          body: 'Data Inspector in the HERE platform now allows you to inspect interactive map layers: view the data structure and see a visualization of the data on the map. Try it with your own interactive map layers via the Inspect tab.',
+          frequency: 'once',
+          productIds: [ 'olp-data', 'data-inspector' ],
+          startDate: '2021-10-20T00:00:00.000Z',
+          endDate: '2021-11-08T00:00:00.000Z'
+        },
+        {
+          id: 'maintenance-notice-2021-12-18',
+          header: 'Maintenance notice',
+          body: 'The HERE Workspace UI will be undergoing maintenance on Saturday, December 18, 2021 beginning at 09:00 UTC. This maintenance period is expected to last 1 hour and during that time users may be unable to access the Workspace UI and/or Billing and usage reports.',
+          variant: 'warning',
+          frequency: 'daily',
+          startDate: '2021-12-16T00:00:00.000Z',
+          endDate: '2021-12-18T10:00:00.000Z'
+        }
+      ]
+    },
+    activeVersionCreatedAt: '2022-02-22T14:55:50.103Z'
+  }
+}
+  </script>
+  <script src="bento/initializers/angularjs-1_8_2/src/__pluginLoader/pluginLoader.js?version=angularjs-1.8.2" type="text/javascript">
+  </script>
+  <script src="bento/initializers/angularjs-1_8_2/src/app.js?version=angularjs-1.8.2" type="text/javascript">
+  </script>
+  <script src="/components/progress-step/progress-step-component.js" type="text/javascript">
+  </script>
+  <script src="/components/progress-step/olp-spinner-component.js" type="text/javascript">
+  </script>
+  <script src="bento/plugins.js?version=olp-home-3.3.5665516" type="text/javascript">
+  </script>
+  <link href="https://platform.here.com/hds/hds-styles.css" rel="stylesheet"/>
+  <script src="bento/product.js?version=olp-home-3.3.5665516" type="text/javascript">
+  </script>
+  <link href="bento/plugins.css?version=olp-home-3.3.5665516" rel="stylesheet" type="text/css"/>
+  <link href="bento/product.css?version=olp-home-3.3.5665516" rel="stylesheet" type="text/css"/>
+  <meta class="foundation-mq"/>
+  <script async="" charset="utf-8" id="utag_here.hereolpportal_8" src="//tags.tiqcdn.com/utag/here/hereolpportal/prod/utag.8.js?utv=ut4.48.202201241659" type="text/javascript">
+  </script>
+  <script async="" charset="utf-8" id="utag_here.hereolpportal_12" src="//tags.tiqcdn.com/utag/here/hereolpportal/prod/utag.12.js?utv=ut4.48.202004060924" type="text/javascript">
+  </script>
+  <script async="" charset="utf-8" id="utag_here.hereolpportal_13" src="//tags.tiqcdn.com/utag/here/hereolpportal/prod/utag.13.js?utv=ut4.48.202105250702" type="text/javascript">
+  </script>
+  <script async="" charset="utf-8" id="utag_here.hereolpportal_17" src="//tags.tiqcdn.com/utag/here/hereolpportal/prod/utag.17.js?utv=ut4.48.202109072109" type="text/javascript">
+  </script>
+  <script async="" charset="utf-8" id="utag_here.hereolpportal_24" src="//tags.tiqcdn.com/utag/here/hereolpportal/prod/utag.24.js?utv=ut4.48.202201140912" type="text/javascript">
+  </script>
+  <script async="" charset="utf-8" id="tiqapp" src="//tags.tiqcdn.com/utag/tiqapp/utag.v.js?a=here/hereolpportal/202201271046&amp;cb=1646376460791" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <noscript>
+   Please enable JavaScript to access the HERE Open Location Platform.
+  </noscript>
+  <!-- uiView: -->
+  <ui-view class="ng-scope" style="">
+   <!-- uiView: -->
+   <ui-view class="ng-scope">
+    <signup class="ng-scope ng-isolate-scope">
+     <gal-topnav class="olp-signup ng-isolate-scope">
+      <lui-desktopnavigation>
+       <a data-test="topnav-logo" href="/" slot="logo" target="_self">
+        <lui-logo>
+         <svg class="lui-logo__seed" viewbox="0 0 30 30">
+          <path d="M20.9981311,9.09539833 C20.5681157,8.59781499 20.5553811,8.02264833 20.9981311,7.56327333 C21.4278503,7.12868999 21.9849157,7.11643999 22.5171041,7.56327333 L20.9981311,9.09539833 Z M13.9985349,16.1589817 C13.5679272,15.660815 13.5554888,15.0739817 13.9985349,14.6259817 C14.4288465,14.1919817 14.986208,14.1791483 15.5299465,14.6259817 L13.9985349,16.1589817 Z M19.5931772,16.0315233 L21.1633849,14.4477733 L19.4679041,12.7359817 C18.0881234,11.343565 18.4932618,10.603315 18.8104426,10.2836483 C19.0124195,10.0794817 19.2152849,9.92635666 19.3547734,9.84964833 C19.5449041,10.220065 19.7978195,10.57794 20.1138157,10.88419 C21.7577657,12.55719 23.556308,12.3267733 24.9363849,10.9232733 C25.7591003,10.0920233 26.1520965,9.32639833 26.2524926,8.94256499 L24.8969965,8.18918999 C24.7332234,8.54648166 24.3529618,9.16014833 23.9235388,9.59414833 C23.1763426,10.360065 22.4664618,10.360065 21.9869888,9.96456499 L24.8108157,7.12868999 L24.4566157,6.77139833 C22.7963772,5.08527333 21.2543041,4.99573166 19.8609003,6.40098166 C18.9374926,7.33285666 18.8104426,8.48260666 19.2152849,9.52998166 L18.1769695,8.29156499 C18.0759811,8.32977333 17.8861465,8.48289833 17.6960157,8.67481499 C17.1516849,9.23685666 17.0252272,10.1048567 17.1650118,10.6797317 L16.4675695,10.0797733 L15.0886772,11.4718983 L16.9861349,13.3878567 C15.4804888,12.1360233 14.1258811,12.20019 12.8737426,13.4642733 C11.6076849,14.74119 11.6832041,16.3001483 12.733958,17.6018567 L12.556858,17.4236483 C11.4302888,16.2867317 10.3419234,16.0428983 9.26540415,17.1418983 C8.63281953,17.7683983 8.53153492,18.3808983 8.59491184,18.93069 L5.93663492,16.2607733 L4.391008,17.818565 L9.52927723,23.0181067 L12.6691003,23.0181067 L10.504808,20.8335233 C9.74517338,20.079565 9.51743107,19.556315 9.9856503,19.083815 C10.3274118,18.7265233 10.7198157,18.7384817 11.2007695,19.223815 L13.8087003,21.8683567 L15.3780195,20.2846067 L13.4287349,18.31819 C14.9725849,19.6082317 16.6565157,19.28944 17.9350118,17.9868567 C18.6063926,17.32244 18.9724388,16.7087733 19.1507234,16.2876067 L17.7709426,15.5097317 C17.5686695,15.8667317 17.2645195,16.3138567 16.9357888,16.6586067 C16.175858,17.4245233 15.467458,17.4242317 14.9873926,17.0281483 L17.7848618,14.20569 L19.5931772,16.0315233 Z" style="fill: #fff">
+          </path>
+          <polygon points="3.4249939 22.9870148 3.4249939 22.9870148 6.57577467 26.1664731 9.72655543 22.9870148 9.72625928 22.9870148" style="fill: #2dd5c9">
+          </polygon>
+         </svg>
+        </lui-logo>
+       </a>
+       <div class="topnav-left">
+        <!-- ngIf: $ctrl.topnavService.title || $ctrl.topnavService.topnavLinks.length > 0 -->
+        <!-- ngIf: $ctrl.topnavService.titleHref -->
+        <!-- ngIf: !$ctrl.topnavService.titleHref -->
+        <a class="topnav-title ng-binding ng-scope" data-test="topnav-title" href="/" ng-if="!$ctrl.topnavService.titleHref" style="" ui-sref="home">
+        </a>
+        <!-- end ngIf: !$ctrl.topnavService.titleHref -->
+        <lui-tabbar>
+         <!-- ngRepeat: link in $ctrl.topnavService.topnavLinks -->
+        </lui-tabbar>
+       </div>
+       <div slot="controls">
+        <div class="topnav-separator">
+        </div>
+       </div>
+       <div slot="controls">
+        <div class="topnav-button">
+         <button class="ng-scope" data-test="launcher-button" id="launcher-button" ng-class="{ 'open': $ctrl.topnavService.isLauncherOpen }" ng-click="$ctrl.toggleLauncher()" tooltip="Launcher">
+          <svg id="lui-icon-pd-apps-solid-24" style="enable-background:new 0 0 24 24;" version="1.1" viewbox="0 0 24 24" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+           <style type="text/css">
+            .st0 {
+                      display             : none;
+                    }
+                    .st1 {
+                      fill                : currentColor;
+                    }
+           </style>
+           <g id="lui-icon-pd-appswitcher-solid-24">
+            <g class="st0" id="bounding-box">
+             <path class="st1" d="M23.5,0.5v23h-23v-23H23.5 M24,0H0v24h24V0z">
+             </path>
+            </g>
+            <rect class="st1" height="4" width="4" x="3" y="3">
+            </rect>
+            <rect class="st1" height="4" width="4" x="10" y="3">
+            </rect>
+            <rect class="st1" height="4" width="4" x="17" y="3">
+            </rect>
+            <rect class="st1" height="4" width="4" x="3" y="10">
+            </rect>
+            <rect class="st1" height="4" width="4" x="10" y="10">
+            </rect>
+            <rect class="st1" height="4" width="4" x="17" y="10">
+            </rect>
+            <rect class="st1" height="4" width="4" x="3" y="17">
+            </rect>
+            <rect class="st1" height="4" width="4" x="10" y="17">
+            </rect>
+            <rect class="st1" height="4" width="4" x="17" y="17">
+            </rect>
+           </g>
+          </svg>
+         </button>
+        </div>
+       </div>
+       <div slot="controls">
+        <div class="topnav-button">
+         <button class="ng-scope" data-test="support-button" id="support-button" ng-class="{ 'open': $ctrl.topnavService.isSupportOpen }" ng-click="$ctrl.toggleSupport()" tooltip="Support">
+          <svg id="LUI-icon-pd-help-solid-24_1_" style="enable-background:new 0 0 24 24;" version="1.1" viewbox="0 0 24 24" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+           <style type="text/css">
+            .st0 {
+                      display             : none;
+                    }
+                    .st1 {
+                      fill                : currentColor;
+                    }
+           </style>
+           <g>
+            <g id="LUI-icon-pd-help-solid-24">
+             <rect class="st0" height="24" id="Rectangle" width="24">
+             </rect>
+             <path class="st1" d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10c0-2.7-1.1-5.2-2.9-7.1S14.7,2,12,2z M13,18h-2v-2h2V18z
+                         M15.7,10.2c-0.1,0.2-0.2,0.5-0.3,0.7c-0.1,0.2-0.3,0.4-0.5,0.6c-0.2,0.2-0.4,0.3-0.5,0.4c-0.2,0.1-0.3,0.2-0.5,0.4
+                        c-0.2,0.1-0.3,0.3-0.4,0.4c-0.1,0.2-0.2,0.4-0.3,0.6C13,13.5,13,13.7,13,14h-2c0-0.3,0-0.7,0.1-1c0.1-0.3,0.2-0.5,0.3-0.8
+                        c0.1-0.2,0.3-0.5,0.5-0.6c0.2-0.2,0.4-0.4,0.7-0.6c0.2-0.2,0.5-0.4,0.7-0.6c0.2-0.2,0.3-0.5,0.3-0.8c0-0.3-0.1-0.6-0.3-0.8
+                        c-0.3-0.2-0.6-0.4-1-0.4c-0.5,0-0.9,0.1-1.3,0.3c-0.4,0.2-0.8,0.5-1.1,0.8l-1-1.3C9,7.9,9.2,7.7,9.4,7.6c0.5-0.4,1.1-0.7,1.8-0.9
+                        c0.4-0.1,0.8-0.2,1.2-0.1c0.5,0,1.1,0.1,1.6,0.3c0.4,0.2,0.8,0.4,1.1,0.7c0.3,0.3,0.5,0.6,0.6,0.9c0.1,0.3,0.2,0.7,0.2,1
+                        C15.8,9.7,15.8,10,15.7,10.2z">
+             </path>
+            </g>
+           </g>
+          </svg>
+         </button>
+        </div>
+       </div>
+       <div slot="controls">
+        <div class="topnav-button">
+         <button class="ng-scope" data-test="account-button" id="account-button" ng-class="{ 'open': $ctrl.topnavService.isAccountOpen }" ng-click="$ctrl.toggleAccount()" tooltip="Account">
+          <span class="profile-avatar">
+           <!-- ngIf: !$ctrl.authProvider.user -->
+           <span class="profile-placeholder ng-scope" ng-if="!$ctrl.authProvider.user" style="">
+            <svg _ngcontent-c12="" viewbox="0 0 100 100">
+             <path _ngcontent-c12="" d="M42.9799086,54.9783539 C39.8186777,51.4398039 39.6279695,48.1413141 39.6279695,48.1413141 C39.6279695,48.1413141 37.9180604,48.4156686 36.9645195,44.4655868 C36.0142108,40.5155049 37.9180604,41.4352162 37.9180604,41.4352162 C35.4420862,28.9489669 45.5463884,25.5475941 45.5463884,25.5475941 C47.3985205,25.0113557 48.8595393,24.9334141 49.9682327,25.0425324 C51.0833908,24.9334141 52.5379449,25.0113557 54.3933094,25.5475941 C54.3933094,25.5475941 64.4976115,28.9489669 62.028102,41.4352162 C62.028102,41.4352162 63.935184,40.5155049 62.981643,44.4655868 C62.028102,48.4156686 60.3117282,48.1413141 60.3117282,48.1413141 C60.3117282,48.1413141 60.1242523,51.2683323 57.1925178,54.6915287 C54.729473,57.4163681 52.2050136,58.7351405 49.6708572,58.6447282 C46.2284126,58.5075509 43.6457711,55.7608879 42.9799086,54.9783539 Z M74.9406632,71.0062708 C77.035221,76.3312431 22.9678306,76.3312431 25.0591561,71.0062708 C27.1569463,65.678181 30.4894913,64.6711751 33.1561737,64.215996 C35.8196238,63.7576992 42.2940055,62.1926312 42.8661301,60.7242109 C43.0503736,60.2472081 43.1117881,59.3430852 43.1150205,58.339197 C44.6374537,59.5488511 46.8419112,60.8177409 49.5538464,60.9330945 C49.6831401,60.9393298 49.8156661,60.9393298 49.9449598,60.9393298 C52.3336608,60.9393298 54.6609473,60.0227362 56.8880312,58.2082551 C56.8847988,59.2651436 56.9462133,60.2285021 57.1369215,60.7242109 C57.7090461,62.1895136 64.1834279,63.7514639 66.8468779,64.2128783 C69.5135604,64.6711751 72.8493377,65.6812986 74.9406632,71.0062708 Z">
+             </path>
+            </svg>
+           </span>
+           <!-- end ngIf: !$ctrl.authProvider.user -->
+           <!-- ngIf: $ctrl.authProvider.user && $ctrl.authProvider.user.avatar -->
+           <!-- ngIf: $ctrl.authProvider.user && !$ctrl.authProvider.user.avatar -->
+          </span>
+         </button>
+        </div>
+       </div>
+      </lui-desktopnavigation>
+      <gal-launcher class="ng-isolate-scope">
+       <div class="panel" ng-class="{ 'open': $ctrl.topnavService.isLauncherOpen }">
+        <lui-contentchromelayer-theme class="main" click-outside="$ctrl.close()" outside-if-not="launcher-button" tabindex="-1">
+         <div class="panel-heading">
+          <h1>
+           <svg id="lui-icon-pd-apps-solid-24" style="enable-background:new 0 0 24 24;" version="1.1" viewbox="0 0 24 24" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+            <style type="text/css">
+             .st0 {
+                      display             : none;
+                    }
+                    .st1 {
+                      fill                : currentColor;
+                    }
+            </style>
+            <g id="lui-icon-pd-appswitcher-solid-24">
+             <g class="st0" id="bounding-box">
+              <path class="st1" d="M23.5,0.5v23h-23v-23H23.5 M24,0H0v24h24V0z">
+              </path>
+             </g>
+             <rect class="st1" height="4" width="4" x="3" y="3">
+             </rect>
+             <rect class="st1" height="4" width="4" x="10" y="3">
+             </rect>
+             <rect class="st1" height="4" width="4" x="17" y="3">
+             </rect>
+             <rect class="st1" height="4" width="4" x="3" y="10">
+             </rect>
+             <rect class="st1" height="4" width="4" x="10" y="10">
+             </rect>
+             <rect class="st1" height="4" width="4" x="17" y="10">
+             </rect>
+             <rect class="st1" height="4" width="4" x="3" y="17">
+             </rect>
+             <rect class="st1" height="4" width="4" x="10" y="17">
+             </rect>
+             <rect class="st1" height="4" width="4" x="17" y="17">
+             </rect>
+            </g>
+           </svg>
+           <span class="ng-scope" translate="data.gal.topnav.launcher">
+            Launcher
+           </span>
+          </h1>
+         </div>
+         <div class="panel-links">
+          <ul>
+           <!-- ngRepeat: link in $ctrl.links -->
+           <!-- ngIf: !link.featureFlag || $ctrl.hasAccess(link.featureFlag) -->
+           <!-- end ngRepeat: link in $ctrl.links -->
+           <!-- ngIf: !link.featureFlag || $ctrl.hasAccess(link.featureFlag) -->
+           <!-- end ngRepeat: link in $ctrl.links -->
+           <!-- ngIf: !link.featureFlag || $ctrl.hasAccess(link.featureFlag) -->
+           <!-- end ngRepeat: link in $ctrl.links -->
+           <!-- ngIf: !link.featureFlag || $ctrl.hasAccess(link.featureFlag) -->
+           <!-- end ngRepeat: link in $ctrl.links -->
+           <!-- ngIf: !link.featureFlag || $ctrl.hasAccess(link.featureFlag) -->
+           <!-- end ngRepeat: link in $ctrl.links -->
+           <!-- ngIf: !link.featureFlag || $ctrl.hasAccess(link.featureFlag) -->
+           <!-- end ngRepeat: link in $ctrl.links -->
+           <!-- ngIf: !link.featureFlag || $ctrl.hasAccess(link.featureFlag) -->
+           <!-- end ngRepeat: link in $ctrl.links -->
+           <!-- ngIf: !link.featureFlag || $ctrl.hasAccess(link.featureFlag) -->
+           <!-- end ngRepeat: link in $ctrl.links -->
+           <!-- ngIf: !link.featureFlag || $ctrl.hasAccess(link.featureFlag) -->
+           <!-- end ngRepeat: link in $ctrl.links -->
+           <!-- ngIf: !link.featureFlag || $ctrl.hasAccess(link.featureFlag) -->
+           <!-- end ngRepeat: link in $ctrl.links -->
+           <!-- ngIf: !link.featureFlag || $ctrl.hasAccess(link.featureFlag) -->
+           <!-- end ngRepeat: link in $ctrl.links -->
+           <!-- ngIf: !link.featureFlag || $ctrl.hasAccess(link.featureFlag) -->
+           <li class="ng-scope" ng-if="!link.featureFlag || $ctrl.hasAccess(link.featureFlag)" ng-repeat="link in $ctrl.links" style="">
+            <a data-test="topnav-launcher-mapcreator" href="/mapcreator" id="topnav-launcher-mapcreator" ng-class="{ 'active': link.active }" ng-href="/mapcreator" olp-event-logger="launcher-panel-links" olp-event-logger-link-text="launcher-panel-links:topnav-launcher-mapcreator-link" rel="noopener" target="_blank">
+             <span class="title ng-binding">
+              HERE Map Creator
+              <!-- ngIf: link.target === '_blank' -->
+              <lui-icon class="new-window-icon ng-scope" icon="lui-icon-pd-pop-out-solid-16" ng-if="link.target === '_blank'">
+               <svg viewbox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                 <style>
+                  .cls-1 {
+                    fill                : none;
+                  }
+                  .st0 {
+                    display             : none;
+                  }
+                  .st1 {
+                    fill                : currentColor;
+                  }
+                 </style>
+                </defs>
+                <g data-name="Layer 2" id="Layer_2">
+                 <g id="LUI-icon-pd-pop_out-solid-16">
+                  <g data-name="LUI-icon-pd-pop_out-solid-16" id="LUI-icon-pd-pop_out-solid-16-2">
+                   <rect class="cls-1 st0" height="16" width="16">
+                   </rect>
+                   <path class="st1" d="M2,11H3.61L1,13.61,2.39,15,5,12.39V14H7V9H2ZM14,1H6A1,1,0,0,0,5,2V7H7V3h6V9H9v2h5a1,1,0,0,0,1-1V2A1,1,0,0,0,14,1Z">
+                   </path>
+                  </g>
+                 </g>
+                </g>
+               </svg>
+              </lui-icon>
+              <!-- end ngIf: link.target === '_blank' -->
+             </span>
+             <span class="description ng-binding">
+              Edit the HERE map and help keep the world up to date
+             </span>
+            </a>
+            <!-- ngIf: link.subLinks -->
+           </li>
+           <!-- end ngIf: !link.featureFlag || $ctrl.hasAccess(link.featureFlag) -->
+           <!-- end ngRepeat: link in $ctrl.links -->
+           <!-- ngIf: !link.featureFlag || $ctrl.hasAccess(link.featureFlag) -->
+           <li class="ng-scope" ng-if="!link.featureFlag || $ctrl.hasAccess(link.featureFlag)" ng-repeat="link in $ctrl.links">
+            <a data-test="topnav-launcher-studio" href="/studio" id="topnav-launcher-studio" ng-class="{ 'active': link.active }" ng-href="/studio" olp-event-logger="launcher-panel-links" olp-event-logger-link-text="launcher-panel-links:topnav-launcher-studio-link" rel="" target="_self">
+             <span class="title ng-binding">
+              HERE Studio
+              <!-- ngIf: link.target === '_blank' -->
+             </span>
+             <span class="description ng-binding">
+              Upload, style and edit your interactive map layers without coding
+             </span>
+            </a>
+            <!-- ngIf: link.subLinks -->
+           </li>
+           <!-- end ngIf: !link.featureFlag || $ctrl.hasAccess(link.featureFlag) -->
+           <!-- end ngRepeat: link in $ctrl.links -->
+           <!-- ngIf: !link.featureFlag || $ctrl.hasAccess(link.featureFlag) -->
+           <!-- end ngRepeat: link in $ctrl.links -->
+           <!-- ngIf: !link.featureFlag || $ctrl.hasAccess(link.featureFlag) -->
+           <!-- end ngRepeat: link in $ctrl.links -->
+           <!-- ngIf: !link.featureFlag || $ctrl.hasAccess(link.featureFlag) -->
+           <!-- end ngRepeat: link in $ctrl.links -->
+           <!-- ngIf: !link.featureFlag || $ctrl.hasAccess(link.featureFlag) -->
+           <!-- end ngRepeat: link in $ctrl.links -->
+           <!-- ngIf: !link.featureFlag || $ctrl.hasAccess(link.featureFlag) -->
+           <!-- end ngRepeat: link in $ctrl.links -->
+           <!-- ngIf: !link.featureFlag || $ctrl.hasAccess(link.featureFlag) -->
+           <li class="ng-scope" ng-if="!link.featureFlag || $ctrl.hasAccess(link.featureFlag)" ng-repeat="link in $ctrl.links">
+            <a data-test="topnav-launcher-projects-manager" href="/management/projects" id="topnav-launcher-projects-manager" ng-class="{ 'active': link.active }" ng-href="/management/projects" olp-event-logger="launcher-panel-links" olp-event-logger-link-text="launcher-panel-links:topnav-launcher-projects-manager-link" rel="" target="_self">
+             <span class="title ng-binding">
+              Projects Manager
+              <!-- ngIf: link.target === '_blank' -->
+             </span>
+             <span class="description ng-binding">
+              Manage work and resources with projects
+             </span>
+            </a>
+            <!-- ngIf: link.subLinks -->
+           </li>
+           <!-- end ngIf: !link.featureFlag || $ctrl.hasAccess(link.featureFlag) -->
+           <!-- end ngRepeat: link in $ctrl.links -->
+           <!-- ngIf: !link.featureFlag || $ctrl.hasAccess(link.featureFlag) -->
+           <li class="ng-scope" ng-if="!link.featureFlag || $ctrl.hasAccess(link.featureFlag)" ng-repeat="link in $ctrl.links">
+            <a data-test="topnav-launcher-access-manager" href="/admin" id="topnav-launcher-access-manager" ng-class="{ 'active': link.active }" ng-href="/admin" olp-event-logger="launcher-panel-links" olp-event-logger-link-text="launcher-panel-links:topnav-launcher-access-manager-link" rel="" target="_self">
+             <span class="title ng-binding">
+              Access Manager
+              <!-- ngIf: link.target === '_blank' -->
+             </span>
+             <span class="description ng-binding">
+              Manage users, apps, groups and permissions
+             </span>
+            </a>
+            <!-- ngIf: link.subLinks -->
+           </li>
+           <!-- end ngIf: !link.featureFlag || $ctrl.hasAccess(link.featureFlag) -->
+           <!-- end ngRepeat: link in $ctrl.links -->
+           <!-- ngIf: !link.featureFlag || $ctrl.hasAccess(link.featureFlag) -->
+           <!-- end ngRepeat: link in $ctrl.links -->
+           <!-- ngIf: !link.featureFlag || $ctrl.hasAccess(link.featureFlag) -->
+           <!-- end ngRepeat: link in $ctrl.links -->
+           <!-- ngIf: !link.featureFlag || $ctrl.hasAccess(link.featureFlag) -->
+           <!-- end ngRepeat: link in $ctrl.links -->
+           <!-- ngIf: !link.featureFlag || $ctrl.hasAccess(link.featureFlag) -->
+           <!-- end ngRepeat: link in $ctrl.links -->
+           <!-- ngIf: !link.featureFlag || $ctrl.hasAccess(link.featureFlag) -->
+           <!-- end ngRepeat: link in $ctrl.links -->
+          </ul>
+         </div>
+        </lui-contentchromelayer-theme>
+       </div>
+      </gal-launcher>
+      <gal-support class="ng-isolate-scope">
+       <div class="panel" ng-class="{ 'open': $ctrl.topnavService.isSupportOpen }">
+        <lui-contentchromelayer-theme class="main" click-outside="$ctrl.close()" outside-if-not="support-button" tabindex="-1">
+         <div class="panel-heading">
+          <h1>
+           <svg id="LUI-icon-pd-help-solid-24_1_" style="enable-background:new 0 0 24 24;" version="1.1" viewbox="0 0 24 24" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+            <style type="text/css">
+             .st0 {
+                      display             : none;
+                    }
+                    .st1 {
+                      fill                : currentColor;
+                    }
+            </style>
+            <g>
+             <g id="LUI-icon-pd-help-solid-24">
+              <rect class="st0" height="24" id="Rectangle" width="24">
+              </rect>
+              <path class="st1" d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10c0-2.7-1.1-5.2-2.9-7.1S14.7,2,12,2z M13,18h-2v-2h2V18z
+                         M15.7,10.2c-0.1,0.2-0.2,0.5-0.3,0.7c-0.1,0.2-0.3,0.4-0.5,0.6c-0.2,0.2-0.4,0.3-0.5,0.4c-0.2,0.1-0.3,0.2-0.5,0.4
+                        c-0.2,0.1-0.3,0.3-0.4,0.4c-0.1,0.2-0.2,0.4-0.3,0.6C13,13.5,13,13.7,13,14h-2c0-0.3,0-0.7,0.1-1c0.1-0.3,0.2-0.5,0.3-0.8
+                        c0.1-0.2,0.3-0.5,0.5-0.6c0.2-0.2,0.4-0.4,0.7-0.6c0.2-0.2,0.5-0.4,0.7-0.6c0.2-0.2,0.3-0.5,0.3-0.8c0-0.3-0.1-0.6-0.3-0.8
+                        c-0.3-0.2-0.6-0.4-1-0.4c-0.5,0-0.9,0.1-1.3,0.3c-0.4,0.2-0.8,0.5-1.1,0.8l-1-1.3C9,7.9,9.2,7.7,9.4,7.6c0.5-0.4,1.1-0.7,1.8-0.9
+                        c0.4-0.1,0.8-0.2,1.2-0.1c0.5,0,1.1,0.1,1.6,0.3c0.4,0.2,0.8,0.4,1.1,0.7c0.3,0.3,0.5,0.6,0.6,0.9c0.1,0.3,0.2,0.7,0.2,1
+                        C15.8,9.7,15.8,10,15.7,10.2z">
+              </path>
+             </g>
+            </g>
+           </svg>
+           <span class="ng-scope" translate="data.gal.topnav.support">
+            Support
+           </span>
+          </h1>
+         </div>
+         <div class="panel-content">
+          <div class="docSearch search" ng-show="$ctrl.enableDocSearch">
+           <form __biza="W___" __bizdiag="0" class="ng-pristine ng-valid ng-valid-maxlength" ng-submit="$ctrl.openDocsUrl()" style="">
+            <div class="input-group">
+             <i class="material-icons input-icon">
+              search
+             </i>
+             <input class="has-icon ng-pristine ng-untouched ng-valid ng-empty ng-valid-maxlength" id="docSearchText" maxlength="500" ng-model="$ctrl.searchText" style="" type="text"/>
+            </div>
+            <a class="button ng-binding" href="" id="docSearchSubmit" ng-click="$ctrl.openDocsUrl()" style="min-width: 0;" type="submit">
+             Search
+            </a>
+           </form>
+          </div>
+          <ul class="link-list">
+           <li>
+            <a data-test="support-link-1" href="https://developer.here.com/platform/documentation" target="_blank">
+             <span class="ng-scope" translate="data.gal.topnav.support.documentation">
+              Documentation
+             </span>
+             <i class="material-icons">
+              arrow_forward
+             </i>
+            </a>
+           </li>
+           <!-- ngIf: !$ctrl.hasAccess('isChina') -->
+           <li class="ng-scope" ng-if="!$ctrl.hasAccess('isChina')" style="">
+            <a data-test="support-link-2" href="https://support.here.com/csm" target="_blank">
+             <span class="ng-scope" translate="data.gal.topnav.support.knowledge-base">
+              Knowledge base
+             </span>
+             <i class="material-icons">
+              arrow_forward
+             </i>
+            </a>
+           </li>
+           <!-- end ngIf: !$ctrl.hasAccess('isChina') -->
+           <li>
+            <a data-test="support-link-3" href="https://developer.here.com/tutorials" target="_blank">
+             <span class="ng-scope" translate="data.gal.topnav.support.code-examples">
+              Code examples
+             </span>
+             <i class="material-icons">
+              arrow_forward
+             </i>
+            </a>
+           </li>
+           <li>
+            <a data-test="support-link-4" href="https://developer.here.com/olp/documentation/changelog/index.html" target="_blank">
+             <span class="ng-scope" translate="data.gal.topnav.support.changelog">
+              Changelog
+             </span>
+             <i class="material-icons">
+              arrow_forward
+             </i>
+            </a>
+           </li>
+           <li>
+            <a data-test="support-link-5" href="https://developer.here.com/blog/topic/olp-release-announcements" target="_blank">
+             <span class="ng-scope" translate="data.gal.topnav.support.announcements">
+              Release announcements
+             </span>
+             <i class="material-icons">
+              arrow_forward
+             </i>
+            </a>
+           </li>
+           <li>
+            <a data-test="support-link-6" href="https://status.here.com/status" target="_blank">
+             <span class="ng-scope" translate="data.gal.topnav.support.system-status">
+              System status
+             </span>
+             <i class="material-icons">
+              arrow_forward
+             </i>
+            </a>
+           </li>
+           <!-- ngIf: !$ctrl.hasAccess('isChina') -->
+           <li class="ng-scope" ng-if="!$ctrl.hasAccess('isChina')">
+            <a data-test="support-link-7" href="https://developer.here.com/documentation/sla/customer_notice/index.html" target="_blank">
+             <span class="ng-scope" translate="data.gal.topnav.support.service-level-agreement">
+              Service-level agreement
+             </span>
+             <i class="material-icons">
+              arrow_forward
+             </i>
+            </a>
+           </li>
+           <!-- end ngIf: !$ctrl.hasAccess('isChina') -->
+          </ul>
+          <hr/>
+          <h4 class="ng-scope" translate="data.gal.topnav.support.community-support">
+           Community support
+          </h4>
+          <p class="ng-scope" translate="data.gal.topnav.support.community-description">
+           Ask questions and get answers from HERE engineers and the developer community.
+          </p>
+          <div class="section-link">
+           <a data-test="support-stack-overflow" href="https://stackoverflow.com/questions/tagged/here-olp" target="_blank">
+            Stack Overflow
+           </a>
+          </div>
+          <hr/>
+          <h4 class="ng-scope" translate="data.gal.topnav.support.help">
+           Need more help?
+          </h4>
+          <p class="ng-scope" translate="data.gal.topnav.support.help-description">
+           Get the technical and account support you need. You can also send feedback and request new features.
+          </p>
+          <br/>
+          <!-- ngIf: !$ctrl.hasAccess('isChina') -->
+          <div class="ng-scope" ng-if="!$ctrl.hasAccess('isChina')" style="">
+           <a class="button outline tight ng-binding" data-test="support-contact-us" href="https://support.here.com/csm" id="support-contact-us" target="_blank">
+            Support Portal
+           </a>
+          </div>
+          <!-- end ngIf: !$ctrl.hasAccess('isChina') -->
+          <!-- ngIf: $ctrl.hasAccess('isChina') -->
+         </div>
+        </lui-contentchromelayer-theme>
+       </div>
+      </gal-support>
+      <gal-account class="ng-isolate-scope">
+       <div class="panel" ng-class="{ 'open': $ctrl.topnavService.isAccountOpen }">
+        <lui-contentchromelayer-theme class="main" click-outside="$ctrl.close()" outside-if-not="account-button" tabindex="-1">
+         <!-- ngIf: $ctrl.authProvider.user -->
+         <!-- ngIf: $ctrl.authProvider.user -->
+         <!-- ngIf: !$ctrl.authProvider.user -->
+         <div class="panel-links ng-scope" ng-if="!$ctrl.authProvider.user" style="">
+          <ul>
+           <li class="end">
+            <a data-test="account-sign-in" id="account-sign-in" ng-click="$ctrl.signIn()">
+             <span class="title">
+              <svg id="LUI-icon-pd-sign_out-solid-24_1_" style="enable-background: new 0 0 24 24;" version="1.1" viewbox="0 0 24 24" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+               <style type="text/css">
+                .st0 {
+                    display             : none;
+                  }
+                  .st1 {
+                    fill                : currentColor;
+                  }
+               </style>
+               <g>
+                <g id="LUI-icon-pd-sign_out-solid-24">
+                 <rect class="st0" height="24" id="Rectangle" width="24">
+                 </rect>
+                 <path class="st1" d="M2,12l5-5l1.2,1.2L5.5,11H15v2H5.5l2.7,2.8L7,17L2,12z M9,4h11v16H9v2h11c1.1,0,1.9-0.9,2-1.9V3.9
+                  C21.9,2.9,21.1,2,20,2H9V4z">
+                 </path>
+                </g>
+               </g>
+              </svg>
+              <span class="ng-scope" translate="data.gal.topnav.account.sign-in">
+               Sign in
+              </span>
+             </span>
+            </a>
+           </li>
+          </ul>
+         </div>
+         <!-- end ngIf: !$ctrl.authProvider.user -->
+        </lui-contentchromelayer-theme>
+       </div>
+      </gal-account>
+     </gal-topnav>
+     <div class="olp-signup o-page o-page--checkout">
+      <div class="olp-signup-wrapper o-page__content">
+       <div class="progress-bar">
+        <!-- ngIf: !$ctrl.error -->
+        <div class="progress-bar__inner olp-signup-header text-center ng-scope" data-ng-if="!$ctrl.error" style="">
+         <!-- ngRepeat: (stepId, step) in $ctrl.steps -->
+         <progress-step badge="1" class="ng-scope" data-ng-repeat="(stepId, step) in $ctrl.steps" state="active" title="Verify identity">
+         </progress-step>
+         <!-- end ngRepeat: (stepId, step) in $ctrl.steps -->
+         <progress-step badge="2" class="ng-scope" data-ng-repeat="(stepId, step) in $ctrl.steps" state="" title="Set password">
+         </progress-step>
+         <!-- end ngRepeat: (stepId, step) in $ctrl.steps -->
+         <progress-step badge="3" class="ng-scope" data-ng-repeat="(stepId, step) in $ctrl.steps" state="" title="Billing details">
+         </progress-step>
+         <!-- end ngRepeat: (stepId, step) in $ctrl.steps -->
+         <progress-step badge="4" class="ng-scope" data-ng-repeat="(stepId, step) in $ctrl.steps" state="" title="Done">
+         </progress-step>
+         <!-- end ngRepeat: (stepId, step) in $ctrl.steps -->
+        </div>
+        <!-- end ngIf: !$ctrl.error -->
+       </div>
+       <div class="checkout-page o-main-content o-container">
+        <!-- ngIf: $ctrl.error -->
+        <!-- ngIf: $ctrl.SignupService.currentStepId===$ctrl.signupConstants.STEPS.VERIFY_IDENTITY.id && !$ctrl.loading -->
+        <div class="checkout-page__row ng-scope" data-ng-if="$ctrl.SignupService.currentStepId===$ctrl.signupConstants.STEPS.VERIFY_IDENTITY.id &amp;&amp; !$ctrl.loading" style="">
+         <signup-here-account class="checkout-page__main ng-isolate-scope" data-callback="$ctrl.hereAccountCallback(data)" data-channel="$ctrl.hereAccountChannel" data-developer="$ctrl.developerDetails" data-options="$ctrl.hereAccountOptions" data-screen="$ctrl.SignupService.currentStepId">
+          <!-- ngIf: !$ctrl.error -->
+          <div class="o-card o-card--transparent ng-scope" data-ng-if="!$ctrl.error" data-ng-style="$ctrl.iframeDetails.style" id="frame-container" style="height: 556px;">
+           <!-- ngIf: !$ctrl.iframeDetails.style || $ctrl.loading -->
+           <iframe data-ng-show="!$ctrl.loading" data-ng-src="https://account.here.com/ssx-ec?channel=selfServe&amp;currentWindow=true&amp;nonce=1646376457589&amp;sdk=true&amp;self-certify-age=true&amp;sign-in-template=clm&amp;type=frame&amp;uri=https%3A%2F%2Fplatform.here.com&amp;version=4&amp;correlationId=c92cedf5-2092-49c3-b8bd-70fadec235d6&amp;clientId=YQijV3hAPdxySAVtE6ZT&amp;clientData=%7B%7D" data-ng-style="{opacity: $ctrl.iframeDetails.style ? 1:0}" id="here-account-sdk" scrolling="no" src="https://account.here.com/ssx-ec?channel=selfServe&amp;currentWindow=true&amp;nonce=1646376457589&amp;sdk=true&amp;self-certify-age=true&amp;sign-in-template=clm&amp;type=frame&amp;uri=https%3A%2F%2Fplatform.here.com&amp;version=4&amp;correlationId=c92cedf5-2092-49c3-b8bd-70fadec235d6&amp;clientId=YQijV3hAPdxySAVtE6ZT&amp;clientData=%7B%7D" style="opacity: 1;">
+           </iframe>
+          </div>
+          <!-- end ngIf: !$ctrl.error -->
+          <!-- ngIf: $ctrl.error -->
+         </signup-here-account>
+         <signup-plan-card class="checkout-page__order-details ng-isolate-scope" data-channel="$ctrl.hereAccountChannel">
+          <div class="o-card o-card--dark checkout-monthly-benefits plan-card">
+           <div class="checkout-monthly-benefits__header">
+            <h4 class="head_base_plan ng-binding">
+             Base plan
+            </h4>
+            <p class="sub_head_monthly_benefits ng-binding">
+             Monthly benefits
+            </p>
+           </div>
+           <ul class="checkout-monthly-benefits__body">
+            <li class="ng-scope" data-test="sign-up-plan-card-here-services" translate="data.olp-home.views.signup.plan-card.items.learn-about-all-here-services" translate-values="{ developerBaseUrl: $ctrl.developerBaseUrl }">
+             Access all of HERE
+             <a href="https://developer.here.com/documentation#services" target="_blank">
+              Learn more about HERE services
+             </a>
+            </li>
+            <!-- ngIf: $ctrl.channel === $ctrl.SELF_SERVE -->
+            <li class="ng-scope" data-test="sign-up-plan-card-pricing" ng-if="$ctrl.channel === $ctrl.SELF_SERVE" style="" translate="data.olp-home.views.signup.plan-card.items.pricing">
+             Generous free tier
+             <a href="https://www.here.com/pricing" target="_blank">
+              Learn more about tiered pricing
+             </a>
+            </li>
+            <!-- end ngIf: $ctrl.channel === $ctrl.SELF_SERVE -->
+            <!-- ngIf: $ctrl.channel !== $ctrl.SELF_SERVE -->
+            <li class="ng-scope" data-test="sign-up-plan-card-access-management" translate="data.olp-home.views.signup.plan-card.items.learn-about-access-management" translate-values="{ developerBaseUrl: $ctrl.developerBaseUrl }">
+             Team and access management
+             <a href="https://developer.here.com/documentation/identity-access-management/dev_guide/topics/here-platform.html" target="_blank">
+              Learn more about access management
+             </a>
+            </li>
+           </ul>
+           <div class="checkout-monthly-benefits__footer">
+            <span class="ng-binding">
+             Total
+            </span>
+            <span class="ng-binding">
+             FREE
+            </span>
+           </div>
+          </div>
+         </signup-plan-card>
+        </div>
+        <!-- end ngIf: $ctrl.SignupService.currentStepId===$ctrl.signupConstants.STEPS.VERIFY_IDENTITY.id && !$ctrl.loading -->
+        <!-- ngIf: $ctrl.SignupService.currentStepId===$ctrl.signupConstants.STEPS.SET_PASSWORD.id && !$ctrl.loading -->
+        <!-- ngIf: $ctrl.SignupService.currentStepId===$ctrl.signupConstants.STEPS.BILLING_DETAILS.id -->
+        <!-- ngIf: $ctrl.SignupService.currentStepId===$ctrl.signupConstants.STEPS.REGISTRATION_DONE.id -->
+       </div>
+      </div>
+      <olp-footer class="olp-signup o-page__footer ng-isolate-scope">
+       <div class="footer-wrapper">
+        <div class="footer-links">
+         <ul class="flex-row">
+          <!-- ngRepeat: item in $ctrl.footerService.items -->
+          <li class="ng-scope" ng-repeat="item in $ctrl.footerService.items" style="padding-right: 5px;">
+           <!-- ngIf: item.type === 'logo' -->
+           <!-- ngIf: item.type === 'link' -->
+           <a class="link ng-binding ng-scope" href="https://legal.here.com/terms" id="footer-link-service-terms" ng-click="$ctrl.footerOnClick(item.onClick, $event)" ng-href="https://legal.here.com/terms" ng-if="item.type === 'link'" target="_blank">
+            Service Terms
+           </a>
+           <!-- end ngIf: item.type === 'link' -->
+           <!-- ngIf: item.type === 'button' -->
+           <!-- ngIf: item.type ==='text' -->
+           <span class="footer-spacer" ng-hide="$index === $ctrl.footerService.items.length - 1">
+            |
+           </span>
+          </li>
+          <!-- end ngRepeat: item in $ctrl.footerService.items -->
+          <li class="ng-scope" ng-repeat="item in $ctrl.footerService.items" style="padding-right: 5px;">
+           <!-- ngIf: item.type === 'logo' -->
+           <!-- ngIf: item.type === 'link' -->
+           <a class="link ng-binding ng-scope" href="https://legal.here.com/privacy/policy" id="footer-link-privacy-policy" ng-click="$ctrl.footerOnClick(item.onClick, $event)" ng-href="https://legal.here.com/privacy/policy" ng-if="item.type === 'link'" target="_blank">
+            Privacy Policy
+           </a>
+           <!-- end ngIf: item.type === 'link' -->
+           <!-- ngIf: item.type === 'button' -->
+           <!-- ngIf: item.type ==='text' -->
+           <span class="footer-spacer" ng-hide="$index === $ctrl.footerService.items.length - 1">
+            |
+           </span>
+          </li>
+          <!-- end ngRepeat: item in $ctrl.footerService.items -->
+          <li class="ng-scope" ng-repeat="item in $ctrl.footerService.items" style="padding-right: 5px;">
+           <!-- ngIf: item.type === 'logo' -->
+           <!-- ngIf: item.type === 'link' -->
+           <a class="link ng-binding ng-scope" href="https://legal.here.com/privacy/cookies" id="footer-link-cookie-policy" ng-click="$ctrl.footerOnClick(item.onClick, $event)" ng-href="https://legal.here.com/privacy/cookies" ng-if="item.type === 'link'" target="_blank">
+            Cookie policy
+           </a>
+           <!-- end ngIf: item.type === 'link' -->
+           <!-- ngIf: item.type === 'button' -->
+           <!-- ngIf: item.type ==='text' -->
+           <span class="footer-spacer" ng-hide="$index === $ctrl.footerService.items.length - 1">
+            |
+           </span>
+          </li>
+          <!-- end ngRepeat: item in $ctrl.footerService.items -->
+          <li class="ng-scope" ng-repeat="item in $ctrl.footerService.items" style="padding-right: 5px;">
+           <!-- ngIf: item.type === 'logo' -->
+           <!-- ngIf: item.type === 'link' -->
+           <a class="link ng-binding ng-scope" id="footer-link-consent-preferences" ng-click="$ctrl.footerOnClick(item.onClick, $event)" ng-href="" ng-if="item.type === 'link'" target="">
+            Consent preferences
+           </a>
+           <!-- end ngIf: item.type === 'link' -->
+           <!-- ngIf: item.type === 'button' -->
+           <!-- ngIf: item.type ==='text' -->
+           <span class="footer-spacer" ng-hide="$index === $ctrl.footerService.items.length - 1">
+            |
+           </span>
+          </li>
+          <!-- end ngRepeat: item in $ctrl.footerService.items -->
+          <li class="ng-scope" ng-repeat="item in $ctrl.footerService.items" style="padding-right: 5px;">
+           <!-- ngIf: item.type === 'logo' -->
+           <!-- ngIf: item.type === 'link' -->
+           <a class="link ng-binding ng-scope" href="https://status.here.com/status" id="footer-link-system-status" ng-click="$ctrl.footerOnClick(item.onClick, $event)" ng-href="https://status.here.com/status" ng-if="item.type === 'link'" target="_blank">
+            System status
+           </a>
+           <!-- end ngIf: item.type === 'link' -->
+           <!-- ngIf: item.type === 'button' -->
+           <!-- ngIf: item.type ==='text' -->
+           <span class="footer-spacer" ng-hide="$index === $ctrl.footerService.items.length - 1">
+            |
+           </span>
+          </li>
+          <!-- end ngRepeat: item in $ctrl.footerService.items -->
+          <li class="ng-scope" ng-repeat="item in $ctrl.footerService.items" style="padding-right: 5px;">
+           <!-- ngIf: item.type === 'logo' -->
+           <!-- ngIf: item.type === 'link' -->
+           <a class="link ng-binding ng-scope" href="https://here.service-now.com/csm" id="footer-button-contact-us" ng-click="$ctrl.footerOnClick(item.onClick, $event)" ng-href="https://here.service-now.com/csm" ng-if="item.type === 'link'" target="_blank">
+            Contact us
+           </a>
+           <!-- end ngIf: item.type === 'link' -->
+           <!-- ngIf: item.type === 'button' -->
+           <!-- ngIf: item.type ==='text' -->
+           <span class="footer-spacer ng-hide" ng-hide="$index === $ctrl.footerService.items.length - 1">
+            |
+           </span>
+          </li>
+          <!-- end ngRepeat: item in $ctrl.footerService.items -->
+         </ul>
+         <olp-lang-select class="ng-isolate-scope">
+          <!-- ngIf: $ctrl.visible -->
+          <div class="olp-lang-select ng-binding ng-scope" ng-if="$ctrl.visible" style="">
+           Language
+           <select class="ng-pristine ng-untouched ng-valid ng-not-empty" ng-change="$ctrl.changeLanguage($ctrl.currentLocaleDisplayName)" ng-model="$ctrl.currentLocaleDisplayName" ng-options="localesDisplayName for localesDisplayName in $ctrl.localesDisplayNames">
+            <option label="English" selected="selected" value="string:English">
+             English
+            </option>
+            <option label="中文 (Chinese)" value="string:中文 (Chinese)">
+             中文 (Chinese)
+            </option>
+            <option label="日本語 (Japanese)" value="string:日本語 (Japanese)">
+             日本語 (Japanese)
+            </option>
+           </select>
+          </div>
+          <!-- end ngIf: $ctrl.visible -->
+         </olp-lang-select>
+         <div class="footer-copyright ng-binding">
+          © 2022 HERE
+         </div>
+        </div>
+       </div>
+      </olp-footer>
+     </div>
+    </signup>
+   </ui-view>
+  </ui-view>
+  <script src="//tags.tiqcdn.com/utag/here/hereolpportal/prod/utag.js">
+  </script>
+  <template id="ProgressStepsComponentTemplate">
+   <style>
+    #progress-step {
+                align-items         : center;
+                font-family         : "Fira Sans", sans-serif;
+                font-size           : 14px;
+                line-height         : 21px;
+                display             : flex;
+                color               : #727FA5;
+              }
+              #badge {
+                box-sizing          : border-box;
+                color               : #C6CCD5;
+                display             : flex;
+                justify-content     : center;
+                align-items         : center;
+                width               : 40px;
+                height              : 40px;
+                position            : relative;
+                text-align          : center;
+                border              : 1px solid #DFE4EB;
+                border-radius       : 50%;
+                background-color    : #fff;
+                margin-right        : 8px;
+              }
+              #badge::before {
+                content             : attr(data-content);
+              }
+              @media (max-width: 992px) {
+                #title {
+                  display             : none;
+                }
+              }
+              :host([state="completed"],[state="active"]) #progress-step {
+                color               : #314065;
+              }
+              :host([state="completed"]) #badge {
+                border              : 1px solid #1DB748;
+              }
+              :host([state="completed"]) #badge::before {
+                content             : url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAMCAYAAACEJVa/AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACcSURBVHgBpdDBEUQwFAbgF3vf2QJ296QQR0YLDlQiOnFRA0c6UIATFVAAXkgMxvDEP5NJ3uTlSyYMNPNN7ZABcOghMEAjCyBzG1kDOEeNm8XsCVA7mVo/A8jIGSBi/FLbxzH8sVEHmBC1GLBxD1EAkVeXVOXbMxk2WVhbH8+ENqkKKiD3l1s5FuolOczoJbBBDiAScBgByY/m1DMjIF1Jgaeg+AQAAAAASUVORK5CYII=");
+                width               : 17px;
+                height              : 12px;
+                margin-top          : -5px;
+              }
+              :host([state="active"]) #badge {
+                border              : 1px solid #5659F4;
+                color               : #5659F4;
+              }
+   </style>
+   <span id="progress-step">
+    <span id="badge">
+    </span>
+    <span id="title">
+    </span>
+   </span>
+  </template>
+  <iframe height="1" id="utag_24_iframe" src="//9565188.fls.doubleclick.net/activityi;src=9565188;type=;cat=;ord=1;num=3806285943186.6426?" style="display:none" width="1">
+  </iframe>
+  <iframe class="aamIframeLoaded" id="destination_publishing_iframe_heredeutschlandgmbh_0" name="destination_publishing_iframe_heredeutschlandgmbh_0_name" sandbox="allow-scripts allow-same-origin" src="https://heredeutschlandgmbh.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Fplatform.here.com" style="display: none; width: 0px; height: 0px;" title="Adobe ID Syncing iFrame">
+  </iframe>
+  <img alt="" src="https://cdn.bizible.com/m/ipv?_biz_r=&amp;_biz_h=802059049&amp;_biz_u=837f28c9ef114430a5fe9e0073792083&amp;_biz_s=7b38af&amp;_biz_l=https%3A%2F%2Fplatform.here.com%2Fsign-up%3Fstep%3Dverify-identity%26aid%3Dwww.here.com-topnav-sign-up&amp;_biz_t=1646376463091&amp;_biz_i=HERE%20platform%20%7C%20Sign-up&amp;_biz_n=0&amp;rnd=693419&amp;cdn_o=a&amp;_biz_z=1646376463092" style="display: none;"/>
+  <img alt="" src="https://cdn.bizibly.com/u?_biz_u=837f28c9ef114430a5fe9e0073792083&amp;_biz_s=7b38af&amp;_biz_l=https%3A%2F%2Fplatform.here.com%2Fsign-up%3Fstep%3Dverify-identity%26aid%3Dwww.here.com-topnav-sign-up&amp;_biz_t=1646376463097&amp;_biz_i=HERE%20platform%20%7C%20Sign-up&amp;rnd=750075&amp;cdn_o=a&amp;_biz_z=1646376463097" style="display: none;"/>
+  <img alt="" src="https://cdn.bizible.com/m/u?mapType=mkto&amp;mapValue=id%3A142-UEL-347%26token%3A_mch-here.com-1646376462661-45218&amp;_biz_u=837f28c9ef114430a5fe9e0073792083&amp;_biz_s=7b38af&amp;_biz_l=https%3A%2F%2Fplatform.here.com%2Fsign-up%3Fstep%3Dverify-identity%26aid%3Dwww.here.com-topnav-sign-up&amp;_biz_t=1646376463098&amp;_biz_i=HERE%20platform%20%7C%20Sign-up&amp;_biz_n=1&amp;rnd=588779&amp;cdn_o=a&amp;_biz_z=1646376463199" style="display: none;"/>
+  <img alt="" src="https://cdn.bizible.com/m/u?mapType=ecid&amp;mapValue=E16CD4415481B5550A4C98A2%40AdobeOrg_25308778769093063324528736328170544530&amp;_biz_u=837f28c9ef114430a5fe9e0073792083&amp;_biz_s=7b38af&amp;_biz_l=https%3A%2F%2Fplatform.here.com%2Fsign-up%3Fstep%3Dverify-identity%26aid%3Dwww.here.com-topnav-sign-up&amp;_biz_t=1646376463100&amp;_biz_i=HERE%20platform%20%7C%20Sign-up&amp;_biz_n=2&amp;rnd=935170&amp;cdn_o=a&amp;_biz_z=1646376463199" style="display: none;"/>
+ </body>
+</html>
